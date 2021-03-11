@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-    <title>내 동료 평가 : magicecole</title>
+    <title>내 동료 평가하기 : magicecole</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -46,13 +46,14 @@
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
                 <li class="nav-item with-sub show">
-                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션 평가</span></a>
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
                     <ul>
-                        <li><a href="">내 미션 평가 요청</a></li>
-                        <li><a href="">내 미션 평가 결과</a></li>
-                        <li class="active"><a href="">내 동료 평가</a></li>
+                        <li><a href="">내 미션 평가요청</a></li>
+                        <li><a href="">내 미션 평가결과</a></li>
+                        <li class="active"><a href="">내 동료 평가하기</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
             </ul>
         </div>
     </aside>
@@ -90,11 +91,12 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                                 <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">동료 평가</li>
+                                <li class="breadcrumb-item" aria-current="page">미션 평가</li>
+                                <li class="breadcrumb-item active" aria-current="page">내 동료 평가하기</li>
                             </ol>
                         </nav>
-                        <h2 class="df-title">내 동료 평가</h2>
-                        <p class="df-lead">동료의 미션을 평가합니다.</p>
+                        <h2 class="df-title">내 동료 평가하기</h2>
+                        <p class="df-lead">내 동료의 미션을 평가합니다.</p>
                     </div>
                     <div class="d-d-none d-md-block">
                         <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
@@ -194,7 +196,7 @@
                                                 </div>
                                             </div><hr>
                                             <div>
-                                                <p class="tx-semibold tx-14 mg-b-0">2. 케인, 제주스처럼 압박하고 패스 하지 못 한다?</p>
+                                                <p class="tx-semibold tx-14 mg-b-0">2. 코드가 실행되는가?</p>
                                                 <div class="d-sm-flex mg-t-16">
                                                     <div>
                                                         <label>
@@ -216,6 +218,33 @@
                                                     </div>
                                                 </div>
                                             </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">3. 사용되지 않는 코드는 없는가?</p>
+                                                <div class="d-sm-flex mg-t-16">
+                                                    <div>
+                                                        <label>
+                                                            <input type="radio" class="check-custom" id="c_eval_3_1" name="c-eval-3">
+                                                            <span class="check-toggle" for="c_eval_3_1"></span>&ensp;엉성해요
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="radio" class="check-custom" id="c_eval_3_2" name="c-eval-3">
+                                                            <span class="check-toggle" for="c_eval_3_2"></span>&ensp;깔끔해요
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="radio" class="check-custom" id="c_eval_3_3" name="c-eval-3">
+                                                            <span class="check-toggle" for="c_eval_3_3"></span>&ensp;아주 깔끔해요
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">4. 총점</p>
+                                                <textarea class="form-control mg-t-8" rows="3" placeholder="내용을 입력하세요."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card mg-t-16">
@@ -294,6 +323,10 @@
                                                     </div>
                                                 </div>
                                             </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">3. 총점</p>
+                                                <textarea class="form-control mg-t-8" rows="3" placeholder="내용을 입력하세요."></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -1634,6 +1634,10 @@ table a {
   height: 260px;
 }
 
+.ht-270 {
+  height: 270px;
+}
+
 .ht-280 {
   height: 280px;
 }
@@ -1660,6 +1664,10 @@ table a {
 
 .ht-370 {
   height: 370px;
+}
+
+.ht-410 {
+  height: 410px;
 }
 
 .ht-560 {
@@ -1840,6 +1848,22 @@ img {
   font-weight: 700;
   color: #0079E4;
   border: 1px solid  #0079E4;
+  border-radius: 10px !important;
+  padding: 4px 6px 4px 6px!important;
+}
+
+.badge-ch- {
+  font-weight: 700;
+  color: #00B8A9;
+  border: 1px solid  #00B8A9;
+  border-radius: 10px !important;
+  padding: 4px 6px 4px 6px!important;
+}
+
+.badge-lock {
+  font-weight: 700;
+  color: #8392A5;
+  border: 1px solid  #8392A5;
   border-radius: 10px !important;
   padding: 4px 6px 4px 6px!important;
 }
@@ -4561,23 +4585,23 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #10b759;
-  border-color: #10b759; }
+  background-color: #00b8a9;
+  border-color: #00b8a9; }
   .btn-success:hover {
     color: #fff;
-    background-color: #0d9448;
-    border-color: #0c8842; }
+    background-color: #00ad9c;
+    border-color: #00ad9c; }
   .btn-success:focus, .btn-success.focus {
     box-shadow: 0 0 0 0.2rem rgba(52, 194, 114, 0.5); }
   .btn-success.disabled, .btn-success:disabled {
     color: #fff;
-    background-color: #10b759;
-    border-color: #10b759; }
+    background-color: #00b8a9;
+    border-color: #00b8a9; }
   .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
   .show > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #0c8842;
-    border-color: #0b7c3c; }
+    background-color: #00ad9c;
+    border-color: #00ad9c; }
     .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
     .show > .btn-success.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(52, 194, 114, 0.5); }
@@ -4606,22 +4630,22 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(38, 195, 218, 0.5); }
 
 .btn-warning {
-  color: #1c273c;
+  color: #fff;
   background-color: #ffc107;
   border-color: #ffc107; }
   .btn-warning:hover {
-    color: #1c273c;
+    color: #fff;
     background-color: #e0a800;
     border-color: #d39e00; }
   .btn-warning:focus, .btn-warning.focus {
     box-shadow: 0 0 0 0.2rem rgba(221, 170, 15, 0.5); }
   .btn-warning.disabled, .btn-warning:disabled {
-    color: #1c273c;
+    color: #fff;
     background-color: #ffc107;
     border-color: #ffc107; }
   .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
   .show > .btn-warning.dropdown-toggle {
-    color: #1c273c;
+    color: #fff;
     background-color: #d39e00;
     border-color: #c69500; }
     .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
@@ -12945,11 +12969,11 @@ textarea.form-control {
     color: #10b759; }
   .step-item.complete .step-number,
   .step-item.complete .step-icon {
-    background-color: #b0d5ff;
-    border-color: #b0d5ff;
+    background-color: #00b8a9;
+    border-color: #00b8a9;
     color: #fff; }
   .step-item.complete ul li.complete a {
-    color: #10b759;
+    color: #00b8a9;
     text-decoration: line-through; }
   .step-item ul {
     position: relative;
@@ -15676,23 +15700,24 @@ textarea.parsley-success:focus {
     display: inline-block;
     position: relative;
     margin-left: auto;
-    opacity: .5; }
+    opacity: .5;
+    transform: rotate(90deg); }
   .nav-aside .with-sub.show .nav-link {
     font-weight: 500; }
     .nav-aside .with-sub.show .nav-link::before {
       /*opacity: 1;*/
       visibility: visible; }
     .nav-aside .with-sub.show .nav-link::after {
-      transform: rotate(90deg); }
+      transform: rotate(-90deg); }
   .nav-aside .with-sub.show ul {
     opacity: 1;
     visibility: visible;
     padding-bottom: 10px;
     height: auto; }
   .nav-aside .with-sub.show:not(.active) .nav-link {
-    color: #1b2e4b; }
+    color: ##1B2E4BE6; }
   .nav-aside .with-sub.show:not(.active) svg {
-    color: #1b2e4b; }
+    color: ##1B2E4BE6; }
   .nav-aside .nav-link {
     position: relative;
     display: flex;
