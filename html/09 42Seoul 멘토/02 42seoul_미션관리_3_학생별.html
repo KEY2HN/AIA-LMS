@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-    <title>내 동료 평가하기 : magicecole</title>
+    <title>미션 관리 : magicecole</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -41,19 +41,18 @@
                 </div>
             </div><!-- aside-loggedin -->
             <ul class="nav nav-aside">
-                <li class="nav-label">학습 메뉴</li>
+                <li class="nav-label">멘토 메뉴</li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
-                <li class="nav-item with-sub show">
-                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션 관리</span></a></li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a>
                     <ul>
-                        <li><a href="">내 미션 평가요청</a></li>
-                        <li><a href="">내 미션 평가결과</a></li>
-                        <li class="active"><a href="">내 동료 평가하기</a></li>
+                        <li><a href="">전체 레포트</a></li>
+                        <li><a href="">개인별 레포트</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
             </ul>
         </div>
     </aside>
@@ -86,37 +85,58 @@
 
         <div class="content-body" style="background-color: #f4f5f8;">
             <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-                <div class="row row-xs d-flex justify-content-between mg-b-20">
+                <div class="row row-xs d-flex justify-content-between">
                     <div>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                                 <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">내 동료 평가하기</li>
+                                <li class="breadcrumb-item active" aria-current="page">미션 관리</li>
                             </ol>
                         </nav>
-                        <h2 class="df-title">내 동료 평가하기</h2>
-                        <p class="df-lead">내 동료의 미션을 평가합니다.</p>
+                        <h2 class="df-title">미션 관리</h2>
+                        <p class="df-lead">수강생의 미션을 관리합니다.</p>
                     </div>
                     <div class="d-d-none d-md-block">
                         <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
                     </div>
                 </div>
-                <div class="row row-xs">
+                <div class="row row-xs d-flex mg-t-15 mg-b-10">
+                    <div class="col-12 col-sm-3 col-lg-3">
+                        <select class="custom-select" aria-label="">
+                            <option value="1" >이정인</option>
+                            <option value="2">이준석</option>
+                            <option value="3">이진주</option>
+                            <option value="4">최귀상</option>
+                            <option value="5">한기헌</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 offset-lg-5 mg-t-10 mg-sm-t-0">
+                        <select class="custom-select" aria-label="">
+                            <option value="1">미션 전체</option>
+                            <option value="2">미션별</option>
+                            <option value="3" selected>학생별</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mg-t-10 mg-sm-t-0">
+                        <a href="" class="btn btn-block btn-primary tx-14">확인</a>
+                    </div>
+                </div>
+                <div class="row row-xs d-flex mg-t-10 mg-b-10">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body pd-25">
                                 <div class="d-flex justify-content-between mg-b-10">
-                                    <h6 class="mb-0 tx-bold"><span class="badge badge-ch- tx-bold">MISSION 01</span>&ensp;미터기 텍스트</h6>
+                                    <h6 class="mb-0 tx-bold"><span class="badge badge-ch tx-bold">MISSION 01</span>&ensp;미터기 텍스트</h6>
                                     <a href="" class="btn btn-sm btn-success" onclick="">평가 완료</a>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <p class="reply-time">마감일&nbsp;:&nbsp;<span>2021-03-11 까지</span></p>
-                                        <p class="reply-time"><u>평가할 동료&nbsp;:&nbsp;<span>이진주</u></span></p>
+                                        <p class="reply-time">제출 시간&nbsp;:&nbsp;<span>2021-03-11 18:54</span></p>
+                                        <p class="reply-time"><u>평가 완료&nbsp;:&nbsp;<span>2021-03-13 12:36</span></u></p>
                                     </div>
                                     <div class="d-flex align-self-end tx-right">
-                                        <p class="reply-time">1차 평가&ensp;<span class="badge badge-success">완료</span></p>&emsp;
-                                        <p class="reply-time">2차 평가&ensp;<span class="badge badge-success">완료</span></p>
+                                        <p class="reply-time">동료 평가&ensp;<span class="badge badge-success">완료</span></p>&emsp;
+                                        <p class="reply-time">멘토 평가&ensp;<span class="badge badge-success">완료</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -124,17 +144,17 @@
                         <div class="card mg-t-10">
                             <div class="card-body pd-25">
                                 <div class="d-flex justify-content-between mg-b-10">
-                                    <h6 class="mb-0 tx-bold"><span class="badge badge-ch- tx-bold">MISSION 02</span>&ensp;문자 분석</h6>
-                                    <a href="" class="btn btn-sm btn-warning" onclick="">평가 중</a>
+                                    <h6 class="mb-0 tx-bold"><span class="badge badge-ch tx-bold">MISSION 02</span>&ensp;문자 분석</h6>
+                                    <a href="" class="btn btn-sm btn-success" onclick="">평가 완료</a>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <p class="reply-time">마감일&nbsp;:&nbsp;<span>2021-03-12 까지</span></p>
-                                        <p class="reply-time"><u>평가할 동료&nbsp;:&nbsp;<span>이정인</span></u></p>
+                                        <p class="reply-time">제출 시간&nbsp;:&nbsp;<span>2021-03-11 18:54</span></p>
+                                        <p class="reply-time"><u>평가 완료&nbsp;:&nbsp;<span>2021-03-13 12:36</span></u></p>
                                     </div>
                                     <div class="d-flex align-self-end tx-right">
-                                        <p class="reply-time">1차 평가&ensp;<span class="badge badge-success">완료</span></p>&emsp;
-                                        <p class="reply-time">2차 평가&ensp;<span class="badge badge-warning">진행</span></p>
+                                        <p class="reply-time">동료 평가&ensp;<span class="badge badge-success">완료</span></p>&emsp;
+                                        <p class="reply-time">멘토 평가&ensp;<span class="badge badge-success">완료</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -142,17 +162,17 @@
                         <div class="card mg-t-10">
                             <div class="card-body pd-25">
                                 <div class="d-flex justify-content-between mg-b-10">
-                                    <h6 class="mb-0 tx-bold"><span class="badge badge-ch- tx-bold">MISSION 03</span>&ensp;알고리즘</h6>
-                                    <a href="" class="btn btn-sm btn-outline-primary" onclick="">미션 평가</a>
+                                    <h6 class="mb-0 tx-bold"><span class="badge badge-ch tx-bold">MISSION 03</span>&ensp;알고리즘</h6>
+                                    <a href="" class="btn btn-sm btn-outline-primary" onclick="">평가하기</a>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <p class="reply-time">마감일&nbsp;:&nbsp;<span>2021-03-14 까지</span></p>
-                                        <p class="reply-time"><u>평가할 동료&nbsp;:&nbsp;<span>한기헌</span></u></p>
+                                        <p class="reply-time">제출 시간&nbsp;:&nbsp;<span>2021-03-11 18:54</span></p>
+                                        <p class="reply-time"><u>평가 완료&nbsp;:&nbsp;<span>2021-03-13 12:36</span></u></p>
                                     </div>
                                     <div class="d-flex align-self-end tx-right">
-                                        <p class="reply-time">1차 평가&ensp;<span class="badge badge-primary">예정</span></p>&emsp;
-                                        <p class="reply-time">2차 평가&ensp;<span class="badge badge-primary">예정</span></p>
+                                        <p class="reply-time">동료 평가&ensp;<span class="badge badge-success">완료</span></p>&emsp;
+                                        <p class="reply-time">멘토 평가&ensp;<span class="badge badge-primary">예정</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -163,17 +183,17 @@
                                     <h6 class="mb-0 tx-bold tx-color-03"><span class="badge badge-lock tx-bold">MISSION 04</span>&ensp;모델 개발</h6>
                                     <div>
                                         <i data-feather="lock" class="tx-color-03 mg-r-5"></i>
-                                        <a href="" class="btn btn-sm btn-white" onclick="" disabled>미션 진행 전</a>
+                                        <a href="" class="btn btn-sm btn-white" onclick="" disabled>평가하기</a>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <p class="reply-time">마감일&nbsp;:&nbsp;<span>-</span></p>
-                                        <p class="reply-time"><u>평가할 동료&nbsp;:&nbsp;<span>-</span></u></p>
+                                        <p class="reply-time">제출 시간&nbsp;:&nbsp;<span>2021-03-11 18:54</span></p>
+                                        <p class="reply-time"><u>평가 완료&nbsp;:&nbsp;<span>2021-03-13 12:36</span></u></p>
                                     </div>
                                     <div class="d-flex align-self-end tx-right">
-                                        <p class="reply-time">1차 평가&ensp;<span class="badge badge-deadline">예정</span></p>&emsp;
-                                        <p class="reply-time">2차 평가&ensp;<span class="badge badge-deadline">예정</span></p>
+                                        <p class="reply-time">동료 평가&ensp;<span class="badge badge-deadline">예정</span></p>&emsp;
+                                        <p class="reply-time">멘토 평가&ensp;<span class="badge badge-deadline">예정</span></p>
                                     </div>
                                 </div>
                             </div>

@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-    <title>내 미션 평가결과 : magicecole</title>
+    <title>미션 관리 : magicecole</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -41,19 +41,12 @@
                 </div>
             </div><!-- aside-loggedin -->
             <ul class="nav nav-aside">
-                <li class="nav-label">학습 메뉴</li>
+                <li class="nav-label">멘토 메뉴</li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
-                <li class="nav-item with-sub show">
-                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
-                    <ul>
-                        <li><a href="">내 미션 평가요청</a></li>
-                        <li class="active"><a href="">내 미션 평가결과</a></li>
-                        <li><a href="">내 동료 평가하기</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션 관리</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a></li>
             </ul>
         </div>
     </aside>
@@ -91,11 +84,12 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                                 <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">내 미션 평가결과</li>
+                                <li class="breadcrumb-item">미션 관리</li>
+                                <li class="breadcrumb-item active" aria-current="page">미션 평가</li>
                             </ol>
                         </nav>
-                        <h2 class="df-title">내 미션 평가결과</h2>
-                        <p class="df-lead">동료가 평가한 미션 결과를 확인합니다.</p>
+                        <h2 class="df-title">미션 평가</h2>
+                        <p class="df-lead">학생이 제출한 미션을 평가합니다.</p>
                     </div>
                     <div class="d-d-none d-md-block">
                         <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
@@ -128,9 +122,9 @@
                                                 <td class="wd-30p">미터기 텍스트</td>
                                             </tr>
                                             <tr class="ht-50">
-                                                <td class="wd-20p table-light tx-light">평가한 동료</td>
-                                                <td class="wd-30p">이준석</td>
-                                                <td class="wd-20p table-light tx-light">평가 시간</td>
+                                                <td class="wd-20p table-light tx-light">이름</td>
+                                                <td class="wd-30p">이진주</td>
+                                                <td class="wd-20p table-light tx-light">제출 시간</td>
                                                 <td class="wd-30p">2021-02-25 15:32</td>
                                             </tr>
                                         </tbody>
@@ -175,181 +169,206 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <a class="btn collapse-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        <h6 class="tx-bold mb-0"><span class="tx-bold badge badge-ch">01</span>&emsp;내 동료의 1차 평가</h6>
+                                        <h6 class="tx-bold mb-0"><span class="tx-bold badge badge-ch">01</span>&emsp;1차 평가 결과 보기</h6>
                                         <i class="tx-primary rotate-icon" data-feather="chevron-down" width="20" height="20"></i>
                                     </a>
                                 </div>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body pd-25">
-                                        <div class="d-flex align-items-center">
-                                            <i data-feather="thumbs-up" class="tx-color-03"></i>
-                                            <p class="tx-semibold tx-14 mg-b-0 mg-l-10">공통 평가</p>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">1. 코드의 가독성은 어떤가요?</p>
-                                            <div class="d-sm-flex mg-t-16">
-                                                <div>
-                                                    <label>
-                                                        <input type="radio" class="check-custom" id="c_eval_1_1" name="c-eval-1">
-                                                        <span class="check-toggle" for="c_eval_1_1"></span>&ensp;엉성해요
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="c_eval_1_2" name="c-eval-1">
-                                                        <span class="check-toggle" for="c_eval_1_2"></span>&ensp;깔끔해요
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="c_eval_1_3" name="c-eval-1" checked>
-                                                        <span class="check-toggle" for="c_eval_1_3"></span>&ensp;아주 깔끔해요
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">2. 코드가 실행되는가?</p>
-                                            <div class="d-sm-flex mg-t-16">
-                                                <div>
-                                                    <label>
-                                                        <input type="radio" class="check-custom" id="c_eval_2_1" name="c-eval-2">
-                                                        <span class="check-toggle" for="c_eval_2_1"></span>&ensp;엉성해요
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="c_eval_2_2" name="c-eval-2" checked>
-                                                        <span class="check-toggle" for="c_eval_2_2"></span>&ensp;깔끔해요
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="c_eval_2_3" name="c-eval-2">
-                                                        <span class="check-toggle" for="c_eval_2_3"></span>&ensp;아주 깔끔해요
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">3. 사용되지 않는 코드는 없는가?</p>
-                                            <div class="d-sm-flex mg-t-16">
-                                                <div>
-                                                    <label>
-                                                        <input type="radio" class="check-custom" id="c_eval_3_1" name="c-eval-3">
-                                                        <span class="check-toggle" for="c_eval_3_1"></span>&ensp;엉성해요
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="c_eval_3_2" name="c-eval-3">
-                                                        <span class="check-toggle" for="c_eval_3_2"></span>&ensp;깔끔해요
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="c_eval_3_3" name="c-eval-3" checked>
-                                                        <span class="check-toggle" for="c_eval_3_3"></span>&ensp;아주 깔끔해요
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">4. 총평</p>
-                                            <textarea class="form-control mg-t-8" rows="3" placeholder="내용을 입력하세요." disabled>2011년 4월부터 6월까지 시즌 1 방영을 시작으로 2019년 5월 19일 8시즌을 마지막으로 종료되었다. 시즌 1은 1권 왕좌의 게임, 시즌 2는 2권 왕들의 전쟁, 시즌 3과 4는 3권 검의 폭풍의 내용을 각각 다루었으며, 시즌 4와 시즌 5는 기본적으로 까마귀의 향연과 드래곤과의 춤을 다루지만 일정 부분 소설에서 진행되지 않은 부분을 다루기도 했다. 시즌 6의 경우엔 본격적으로 드라마 오리지널 내용과 출간되지 않은 소설 내용이 진행되었다. HBO 드라마 사상 최고의 메가 히트작 중 하나가 되었으며, 특히 유럽을 위시하여 전 세계적으로 폭발적인 인기를 끌었다.
-                                            </textarea>
-                                        </div>
-                                        <div class="d-flex align-items-center mg-t-20">
-                                            <i data-feather="thumbs-up" class="tx-color-03"></i>
-                                            <p class="tx-semibold tx-14 mg-b-0 mg-l-10">미션별 평가</p>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">1. 개와 고양이 사진을 넣고, 개와 고양이를 CNN모델로 분류학 위해 정확도를 측정한다.</p>
-                                            <div class="d-sm-flex mg-t-16">
-                                                <div>
-                                                    <label>
-                                                        <input type="radio" class="check-custom" id="m_eval_1_1" name="m-eval-1">
-                                                        <span class="check-toggle" for="m_eval_1_1"></span>&ensp;1점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_1_2" name="m-eval-1">
-                                                        <span class="check-toggle" for="m_eval_1_2"></span>&ensp;2점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_1_3" name="m-eval-1">
-                                                        <span class="check-toggle" for="m_eval_1_3"></span>&ensp;3점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_1_4" name="m-eval-1" checked>
-                                                        <span class="check-toggle" for="m_eval_1_4"></span>&ensp;4점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_1_5" name="m-eval-1">
-                                                        <span class="check-toggle" for="m_eval_1_5"></span>&ensp;5점
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">2. 이번 시즌 케인은 부상에서 완전히 돌아와 손흥민과 함께 토트넘을 이끌고 있다.</p>
-                                            <div class="d-sm-flex mg-t-16">
-                                                <div>
-                                                    <label>
-                                                        <input type="radio" class="check-custom" id="m_eval_2_1" name="m-eval-2">
-                                                        <span class="check-toggle" for="m_eval_2_1"></span>&ensp;1점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_2_2" name="m-eval-2">
-                                                        <span class="check-toggle" for="m_eval_2_2"></span>&ensp;2점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_2_3" name="m-eval-2" checked>
-                                                        <span class="check-toggle" for="m_eval_2_3"></span>&ensp;3점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_2_4" name="m-eval-2">
-                                                        <span class="check-toggle" for="m_eval_2_4"></span>&ensp;4점
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <label class="mg-sm-l-40">
-                                                        <input type="radio" class="check-custom" id="m_eval_2_5" name="m-eval-2">
-                                                        <span class="check-toggle" for="m_eval_2_5"></span>&ensp;5점
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div><hr>
-                                        <div>
-                                            <p class="tx-semibold tx-14 mg-b-0">3. 총점</p>
-                                            <textarea class="form-control mg-t-8" rows="3" placeholder="내용을 입력하세요." disabled>2011년 4월부터 6월까지 시즌 1 방영을 시작으로 2019년 5월 19일 8시즌을 마지막으로 종료되었다. 시즌 1은 1권 왕좌의 게임, 시즌 2는 2권 왕들의 전쟁, 시즌 3과 4는 3권 검의 폭풍의 내용을 각각 다루었으며, 시즌 4와 시즌 5는 기본적으로 까마귀의 향연과 드래곤과의 춤을 다루지만 일정 부분 소설에서 진행되지 않은 부분을 다루기도 했다. 시즌 6의 경우엔 본격적으로 드라마 오리지널 내용과 출간되지 않은 소설 내용이 진행되었다. HBO 드라마 사상 최고의 메가 히트작 중 하나가 되었으며, 특히 유럽을 위시하여 전 세계적으로 폭발적인 인기를 끌었다.
-                                            </textarea>
-                                        </div>
+                                        <table class="table table-bordered tx-14 mg-b-0">
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr class="ht-50">
+                                                    <td class="wd-20p table-light tx-light">평가 동료</td>
+                                                    <td class="wd-30p">이준석</td>
+                                                    <td class="wd-20p table-light tx-light">동료 점수</td>
+                                                    <td class="wd-30p tx-semibold">84<span class="tx-10 tx-color-03">&ensp;/&nbsp;100</span></td>
+                                                </tr>
+                                                <tr class="ht-50">
+                                                    <td class="wd-20p table-light tx-light">동료 평가</td>
+                                                    <td class="wd-30p"><span class="badge badge-success">완료</span></td>
+                                                    <td class="wd-20p table-light tx-light">평가 시간</td>
+                                                    <td class="wd-30p">2021-02-25 15:32</td>
+                                                </tr>
+                                                <tr class="ht-50">
+                                                    <td class="wd-20p table-light tx-light">총평</td>
+                                                    <td class="tx-left" colspan="3">
+                                                        <p class="mg-b-0">
+                                                            이강인(20·발렌시아)이 라리가 빅클럽 FC 바르셀로나의 레이더망에 포착됐다.
+                                                            스페인 매체 돈 발론은 25일(이하 한국시간) "바르셀로나 차기 회장 후보인 주안 라포르타가 전략적으로 이강인의 영입을 고려하는 중"이라고 보도했다. 라포르타는 2003년부터 2010년까지 바르셀로나의 회장을 역임했다. 바르셀로나는 해당 기간에 라리가(4회), 코파 델 레이(1회), 수페르코파 데 에스파냐(3회), 유럽축구연맹(UEFA) 챔피언스리그(2회), UEFA 슈퍼컵(1회), 국제축구연맹(FIFA) 클럽월드컵(1회) 등에서 총 12개의 우승컵을 들어올렸다.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <a class="btn collapse-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <h6 class="tx-bold mb-0"><span class="tx-bold badge badge-ch">02</span>&emsp;내 동료의 2차 평가</h6>
+                                        <h6 class="tx-bold mb-0"><span class="tx-bold badge badge-ch">02</span>&emsp;2차 평가 결과 보기</h6>
                                         <i class="tx-primary rotate-icon" data-feather="chevron-down" width="20" height="20"></i>
                                     </a>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                     <div class="card-body pd-25">
+                                        <table class="table table-bordered tx-14 mg-b-0">
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr class="ht-50">
+                                                    <td class="wd-20p table-light tx-light">평가 동료</td>
+                                                    <td class="wd-30p">이준석</td>
+                                                    <td class="wd-20p table-light tx-light">동료 점수</td>
+                                                    <td class="wd-30p tx-semibold">84<span class="tx-10 tx-color-03">&ensp;/&nbsp;100</span></td>
+                                                </tr>
+                                                <tr class="ht-50">
+                                                    <td class="wd-20p table-light tx-light">동료 평가</td>
+                                                    <td class="wd-30p"><span class="badge badge-success">완료</span></td>
+                                                    <td class="wd-20p table-light tx-light">평가 시간</td>
+                                                    <td class="wd-30p">2021-02-25 15:32</td>
+                                                </tr>
+                                                <tr class="ht-50">
+                                                    <td class="wd-20p table-light tx-light">총평</td>
+                                                    <td class="tx-left" colspan="3">
+                                                        <p class="mg-b-0">
+                                                            이강인(20·발렌시아)이 라리가 빅클럽 FC 바르셀로나의 레이더망에 포착됐다.
+                                                            스페인 매체 돈 발론은 25일(이하 한국시간) "바르셀로나 차기 회장 후보인 주안 라포르타가 전략적으로 이강인의 영입을 고려하는 중"이라고 보도했다. 라포르타는 2003년부터 2010년까지 바르셀로나의 회장을 역임했다. 바르셀로나는 해당 기간에 라리가(4회), 코파 델 레이(1회), 수페르코파 데 에스파냐(3회), 유럽축구연맹(UEFA) 챔피언스리그(2회), UEFA 슈퍼컵(1회), 국제축구연맹(FIFA) 클럽월드컵(1회) 등에서 총 12개의 우승컵을 들어올렸다.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <a class="btn collapse-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h6 class="tx-bold mb-0"><span class="tx-bold badge badge-ch">03</span>&emsp;평가하기</h6>
+                                        <i class="tx-primary rotate-icon" data-feather="chevron-down" width="20" height="20"></i>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body pd-25">
+                                        
+                                        <div class="row row-xs d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i data-feather="thumbs-up" class="tx-color-03"></i>
+                                                <p class="tx-semibold tx-14 mg-b-0 mg-l-10">공통 평가</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <a href="" class="btn btn-block btn-white tx-14">임시저장</a>
+                                                <a href="" class="btn btn-block btn-outline-primary tx-14 mg-l-10">완료하기</a>
+                                            </div>
+                                        </div><hr>
+                                        <div>
+                                            <p class="tx-semibold tx-14 mg-b-0">1. 평가에 대한 설명이 잘 이루어졌나요?</p>
+                                            <div class="d-sm-flex mg-t-16">
+                                                <div>
+                                                    <label>
+                                                        <input type="radio" class="check-custom" id="m_eval_4_1" name="m-eval-4">
+                                                        <span class="check-toggle" for="m_eval_4_1"></span>&ensp;1점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_4_2" name="m-eval-4">
+                                                        <span class="check-toggle" for="m_eval_4_2"></span>&ensp;2점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_4_3" name="m-eval-4">
+                                                        <span class="check-toggle" for="m_eval_4_3"></span>&ensp;3점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_4_4" name="m-eval-4">
+                                                        <span class="check-toggle" for="m_eval_4_4"></span>&ensp;4점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_4_5" name="m-eval-4">
+                                                        <span class="check-toggle" for="m_eval_4_5"></span>&ensp;5점
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div><hr>
+                                        <div>
+                                            <p class="tx-semibold tx-14 mg-b-0">2. 빠른 시간내에 평가가 진행되었나요?</p>
+                                            <div class="d-sm-flex mg-t-16">
+                                                <div>
+                                                    <label>
+                                                        <input type="radio" class="check-custom" id="m_eval_3_1" name="m-eval-3">
+                                                        <span class="check-toggle" for="m_eval_3_1"></span>&ensp;1점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_3_2" name="m-eval-3">
+                                                        <span class="check-toggle" for="m_eval_3_2"></span>&ensp;2점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_3_3" name="m-eval-3">
+                                                        <span class="check-toggle" for="m_eval_3_3"></span>&ensp;3점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_3_4" name="m-eval-3">
+                                                        <span class="check-toggle" for="m_eval_3_4"></span>&ensp;4점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_3_5" name="m-eval-3">
+                                                        <span class="check-toggle" for="m_eval_3_5"></span>&ensp;5점
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div><hr>
+                                        <div>
+                                            <p class="tx-semibold tx-14 mg-b-0">3. 평가자가 본인의 의도를 잘 파악하였나요?</p>
+                                            <div class="d-sm-flex mg-t-16">
+                                                <div>
+                                                    <label>
+                                                        <input type="radio" class="check-custom" id="m_eval_5_1" name="m-eval-5">
+                                                        <span class="check-toggle" for="m_eval_5_1"></span>&ensp;1점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_5_2" name="m-eval-5">
+                                                        <span class="check-toggle" for="m_eval_5_2"></span>&ensp;2점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_5_3" name="m-eval-5">
+                                                        <span class="check-toggle" for="m_eval_5_3"></span>&ensp;3점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_5_4" name="m-eval-5">
+                                                        <span class="check-toggle" for="m_eval_5_4"></span>&ensp;4점
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label class="mg-sm-l-40">
+                                                        <input type="radio" class="check-custom" id="m_eval_5_5" name="m-eval-5">
+                                                        <span class="check-toggle" for="m_eval_5_5"></span>&ensp;5점
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div><hr>
+                                        <div>
+                                            <p class="tx-semibold tx-14 mg-b-0">4. 총평</p>
+                                            <textarea class="form-control mg-t-8" rows="3" placeholder="내용을 입력하세요."></textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
