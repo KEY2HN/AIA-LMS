@@ -140,7 +140,7 @@
                                             <h6 class="tx-12 tx-semibold tx-color-03 mg-b-30">최근 수업보다 <span class="tx-medium tx-success">5명 <i class="icon ion-md-arrow-up"></i></span> 출석하였습니다.</h6>
                                             <h6 class="tx-12 tx-bold tx-color-03 mg-b-4">출석률&ensp;<span>70%</span></h6>
                                             <div class="progress ht-10">
-                                                <div class="progress-bar bg-success wd-70p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success wd-70p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -571,6 +571,12 @@
                         gridLines: {
                             drawTicks: false,
                             display: false
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: '백분율(%)',
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontSize: 10
                         }
                     }],
                     xAxes: [{
@@ -585,8 +591,7 @@
                             padding: 10
                         },
                         gridLines: {
-                            drawTicks: false,
-                            display: false
+                            drawTicks: false
                         }
                     }]
                 }

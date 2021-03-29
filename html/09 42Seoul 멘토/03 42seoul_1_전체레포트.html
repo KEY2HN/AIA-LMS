@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-    <title>전체 레포트 : magicecole</title>
+    <title>통합 레포트 : magicecole</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                 <li class="nav-item with-sub show">
                     <a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a>
                     <ul>
-                        <li class="active"><a href="">전체 레포트</a></li>
+                        <li class="active"><a href="">통합 레포트</a></li>
                         <li><a href="">개인별 레포트</a></li>
                     </ul>
                 </li>
@@ -90,11 +90,12 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                                 <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">결과</li>
+                                <li class="breadcrumb-item">레포트</li>
+                                <li class="breadcrumb-item active" aria-current="page">통합 레포트</li>
                             </ol>
                         </nav>
-                        <h2 class="df-title">전체 레포트</h2>
-                        <p class="df-lead">프로젝트 전체 레포트를 확인합니다.</p>
+                        <h2 class="df-title">통합 레포트</h2>
+                        <p class="df-lead">프로젝트 통합 결과를 확인합니다.</p>
                     </div>
                     <div class="d-d-none d-md-block">
                         <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
@@ -493,19 +494,19 @@
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
-            type: 'line',
+            type: 'bar',
             data: {
                 labels: ['1일차', '2일차', '3일차', '4일차','5일차','6일차','7일차'],
                 datasets: [{
+                    type: 'line',
                     label: '출석률(%)',
                     data: [90, 60, 70, 40, 60, 70, 40],
                     pointRadius: 3,
                     pointHoverRadius: 4,
-                    borderWidth: 1,
+                    borderWidth: 2,
                     borderColor: "#00B8A9",
-                    backgroundColor: "#00B8A9",
-                    fill: false,
-                    lineTension: 0
+                    backgroundColor: "rgba(0, 184, 169, 0.12)",
+                    /*lineTension: 0*/
                 }]
             },
             options: {
@@ -527,6 +528,12 @@
                         gridLines: {
                             drawTicks: false,
                             display: false
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: '백분율(%)',
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontSize: 10
                         }
                     }],
                     xAxes: [{

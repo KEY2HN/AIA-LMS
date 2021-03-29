@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-    <title>결과 : magicecole</title>
+    <title>레포트 : magicecole</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -53,7 +53,7 @@
                         <li class="active"><a href="">내 동료 평가하기</a></li>
                     </ul>
                 </li>
-                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a></li>
             </ul>
         </div>
     </aside>
@@ -91,54 +91,78 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                                 <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">결과</li>
+                                <li class="breadcrumb-item active" aria-current="page">레포트</li>
                             </ol>
                         </nav>
-                        <h2 class="df-title">결과</h2>
-                        <p class="df-lead">프로젝트 결과를 확인합니다.</p>
+                        <h2 class="df-title">레포트</h2>
+                        <p class="df-lead">프로젝트 레포트 결과를 확인합니다.</p>
                     </div>
                     <div class="d-d-none d-md-block">
                         <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
                     </div>
                 </div>
                 <div class="row row-xs">
-                    <div class="col-12">
-                        <div class="card">
+                    <div class="col-12 col-sm-8">
+                        <div class="card ht-180">
                             <div class="card-body pd-25">
-                                <div class="d-flex justify-content-between mg-b-20">
+                                <div class="d-flex justify-content-between mg-b-35">
                                     <div class="d-flex align-items-center">
                                         <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex">
                                             <i data-feather="user" class="wd-32 ht-32"></i>
                                         </div>
                                         <div class="mg-l-10">
-                                            <h6 class="tx-20 tx-bold mg-b-4">이준석</h6>
-                                            <h6 class="mb-0 tx-bold tx-color-03">jun12376@gmail.com</h6>
+                                            <h6 class="dash-mge mg-b-5">이준석</h6>
+                                            <p class="tx-color-03 tx-14 mg-b-0">jun12376@gmail.com</p>
                                         </div>
                                     </div>
                                     <div>
                                         <a href="" class="btn btn-sm btn-success" onclick="">수료 가능</a>
                                     </div>
                                 </div>
-                                <h6 class="tx-12 tx-bold tx-color-03 mg-b-4">출석률</h6>
+                                <h6 class="tx-12 tx-semibold tx-color-03 mg-b-4">출석률</h6>
                                 <div class="progress ht-15">
-                                    <div class="progress-bar wd-80p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary wd-80p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="card ht-180 mg-t-10 mg-sm-t-0">
+                            <div class="card-body pd-25">
+                                <h6 class="dash-mge mg-b-10">수료 기준<span class="tx-primary">.</span></h6>
+                                <div class="table-responsive">
+                                    <table class="table tx-12 tx-medium tx-center tx-nowrap mg-b-0">
+                                        <tbody style="border-bottom: 1px solid #e5e9f2;">
+                                            <tr>
+                                                <td class="tx-color-03">미션 제출</td>
+                                                <td><u>3개 이상</u></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tx-color-03">평균 점수</td>
+                                                <td><u>80점 이상</u></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="mge-signup-2 tx-left tx-color-03">*모든 기준이 충족되어야 수료가 가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
                         <div class="card mg-t-10">
                             <div class="card-body pd-25">
-                                <ul class="nav nav-line nav-justified tx-sm-16 tx-11 tx-bold" id="myTab" role="tablist">
+                                <ul class="nav nav-line nav-justified tx-sm-12 tx-11 tx-bold" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link lh-3 active" id="m1-tab" data-toggle="tab" href="#m1" role="tab" aria-controls="mission1" aria-selected="true">미션 1</a>
+                                        <a class="nav-link lh-3 active" id="m1-tab" data-toggle="tab" href="#m1" role="tab" aria-controls="mission1" aria-selected="true">미션 1. 점수 분포도</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link lh-3" id="m2-tab" data-toggle="tab" href="#m2" role="tab" aria-controls="mission2" aria-selected="false">미션 2</a>
+                                        <a class="nav-link lh-3" id="m2-tab" data-toggle="tab" href="#m2" role="tab" aria-controls="mission2" aria-selected="false">미션 2. 점수 분포도</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link lh-3" id="m3-tab" data-toggle="tab" href="#m3" role="tab" aria-controls="mission3" aria-selected="false">미션 3</a>
+                                        <a class="nav-link lh-3" id="m3-tab" data-toggle="tab" href="#m3" role="tab" aria-controls="mission3" aria-selected="false">미션 3. 점수 분포도</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link lh-3" id="m4-tab" data-toggle="tab" href="#m4" role="tab" aria-controls="mission4" aria-selected="false">미션 4</a>
+                                        <a class="nav-link lh-3" id="m4-tab" data-toggle="tab" href="#m4" role="tab" aria-controls="mission4" aria-selected="false">미션 4. 점수 분포도</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link lh-3" id="m5-tab" data-toggle="tab" href="#m5" role="tab" aria-controls="mission5" aria-selected="false">미션 종합</a>
@@ -146,10 +170,21 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="m1" role="tabpanel" aria-labelledby="m1-tab">
-                                    <div class="table-responsive">
-                                        
-                                    </div>
-                                    <div class="mg-t-15"><canvas id="myChart"></canvas></div>
+                                        <div class="d-flex justify-content-end mg-t-15">
+                                            <div class="d-none d-md-block">
+                                                <ul class="list-inline tx-10 tx-color-03 mg-b-0">
+                                                    <li class="list-inline-item mg-l-5">
+                                                        <span class="d-inline-block wd-7 ht-7 bg-primary rounded-circle"></span>
+                                                        <span class="d-none d-md-inline">&nbsp;평균 점수</span>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <span class="d-inline-block wd-7 ht-7 bg-success rounded-circle"></span>
+                                                        <span class="d-none d-md-inline">&nbsp;내 점수</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mg-t-15"><canvas id="myChart"></canvas></div>
                                     <div class="accordion mg-t-10" id="accordionExample">
                                         <div class="card">
                                             <div class="card-header" id="headingOne">
@@ -285,6 +320,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -320,17 +356,22 @@
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['0', '10', '20', '30','40','50','60', '70', '80','90','100'],
+                labels: ['10', '20', '30','40','50','60', '70', '80','90','100'],
                 datasets: [{
                     type: 'line',
                     label: '백분위(%)',
-                    data: [90, 60, 70, 40, 60, 70, 40, 90, 60, 70, 40, 60],
-                    pointRadius: 0,
-                    pointHoverRadius: 4,
-                    borderWidth: 1,
+                    data: [60, 70, 40, 60, 70, 40, 90, 60, 70, 40],
+                    pointRadius: 2,
+                    pointHoverRadius: 3,
+                    borderWidth: 2,
+                    borderColor: "#0779E4",
+                    backgroundColor: "rgba(7, 121, 228, 0.12)",
+                }, {
+                    label: "백분위(%)",
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 0],
                     borderColor: "#00B8A9",
                     backgroundColor: "#00B8A9",
-                    fill: false,
+                    borderWidth: 3
                 }]
             },
             options: {
@@ -352,6 +393,12 @@
                         gridLines: {
                             drawTicks: false,
                             display: false
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: '백분율(%)',
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontSize: 10
                         }
                     }],
                     xAxes: [{
@@ -365,11 +412,10 @@
                             padding: 10
                         },
                         scaleLabel: {
-                            fontColor: "rgba(0,0,0,0.5)",
-                            fontStyle: "bold",
-                            fontSize: 10,
                             display: true,
-                            labelString: '점수'
+                            labelString: '미션 점수',
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontSize: 10
                         },
                         gridLines: {
                             drawTicks: false
