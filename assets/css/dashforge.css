@@ -7,6 +7,17 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.badge-purple {
+  color: #fff;
+  background-color: #A76ED5; }
+
+.badge-skyblue {
+  color: #fff;
+  background-color: #62c6ff; }
+
+.tx-skyblue {
+  color: #62c6ff !important; }
+
 /* Styles for hiding the native radio button */
 input[type='radio'].check-custom {
   position: absolute;
@@ -276,6 +287,42 @@ footer {
 	padding: 25px;
 	border-radius: 8px !important;
 	margin-bottom: 10px;
+}
+
+.mge_select {
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	font-weight: 500;
+  color: #8392a5;
+}
+
+.mge_select input[type=radio] {
+	display: none;
+}
+
+.mge_select label:hover {
+  border: 1px solid #8392A5;
+}
+
+.mge_select label {
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
+	padding: 15px;
+  margin-bottom: 0px;
+	border: 1px solid rgba(72, 94, 144, 0.16);
+  border-radius: 8px;
+  background: #fff;
+	user-select: none;
+	box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
+}
+
+.mge_select input[type=radio]:checked + label {
+	background: #fff;
+	border: 1px solid #0079E4;
+	color: #001737;
+	box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
 }
 
 .form_radio_btn {
@@ -1164,7 +1211,7 @@ opacity: 0.5;
 }
 
 .mge-p {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   color: #8392a5;
 }
@@ -1668,6 +1715,26 @@ table a {
 
 .ht-410 {
   height: 410px;
+}
+
+.ht-415 {
+  height: 415px;
+}
+
+.ht-430 {
+  height: 430px;
+}
+
+.ht-460 {
+  height: 460px;
+}
+
+.ht-470 {
+  height: 470px;
+}
+
+.ht-520 {
+  height: 520px;
 }
 
 .ht-560 {
@@ -13025,7 +13092,7 @@ textarea.form-control {
   flex-shrink: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
   color: #8392a5;
-  border: 2px solid #8392a5;
+  border: 1px solid #8392a5;
   border-radius: 100%; }
   @media (min-width: 768px) {
     .step-number {
