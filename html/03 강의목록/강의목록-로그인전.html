@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-    <title>강의 목록 : magicecole</title>
+    <title>대전대학교 x magicecole</title>
 
     <!-- vendor css -->
     <link href="/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column" style="background-color: #f5f5f7;">
     <header class="navbar navbar-header navbar-header-fixed">
         <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
         <div class="navbar-brand">
@@ -45,7 +45,7 @@
         <div id="navbarMenu" class="navbar-menu-wrapper">
             <div class="navbar-menu-header">
                 <img src="/assets/img/logo_dju_1.png" ondragstart="return false">
-              <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+                <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
             </div><!-- navbar-menu-header -->
             <ul class="nav navbar-menu justify-content-end">
                 <li class="nav-label pd-l-15 pd-lg-l-25 d-lg-none">Main Navigation</li>
@@ -57,28 +57,8 @@
             </ul>
         </div><!-- navbar-menu-wrapper -->
         <div class="navbar-right">
-            <div class="dropdown dropdown-profile">
-                <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
-                    <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
-                        <i data-feather="user" class="wd-16 ht-16"></i>
-                    </div>
-                </a><!-- dropdown-link -->
-                <div class="dropdown-menu dropdown-menu-right tx-13">
-                <div>
-                    <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
-                        <i data-feather="user" class="wd-32 ht-32"></i>
-                    </div>
-                    <h6 class="profile-tx tx-lg-16">한기헌</h6>
-                    <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
-                    <div class="dropdown-divider"></div>
-                    </div>
-                    <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
-                    <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
-                    <a href="" class="dropdown-item"><i data-feather="message-square"></i> 챗봇 문의</a>
-                    <a href="" class="dropdown-item"><i data-feather="settings"></i>시스템 공지</a>
-                    <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
-                </div><!-- dropdown-menu -->
-            </div><!-- dropdown -->
+            <a href="" class="btn btn-buy-"><i data-feather="log-in"></i> <span>로그인</span></a>
+            <a href="" class="btn btn-buy mg-l-15 mg-lg-l-10"><i data-feather="user-plus"></i> <span>회원가입</span></a>
         </div><!-- navbar-right -->
     </header><!-- navbar -->
 
@@ -96,8 +76,8 @@
         <div class="row justify-content-center mg-b-20">
             <div class="col-12 col-sm-10 col-xl-8">
                 <div class="d-flex justify-content-between">
-                    <h1 class="course-h1 tx-lg-18">학교 공지<span class="tx-primary">.</span></h1>
-                    <a href="" class="notice-a align-self-end">전체보기</a>
+                    <h2 class="course-h2">학교 공지.</h2>
+                    <a class="view-btn" href="">전체 보기<i data-feather="chevron-right" class="wd-10"></i></a>
                 </div>
                 <div class="card ht-195">
                     <div class="card-body d-flex align-items-center">
@@ -134,19 +114,36 @@
         <div class="row justify-content-center mg-b-20">
             <div class="col-12 col-sm-10 col-xl-8">
                 <div class="d-flex justify-content-between">
-                    <h1 class="course-h1 tx-lg-18">강의 목록<span class="tx-primary">.</span></h1>
+                    <h2 class="course-h2">강의 목록.</h2>
                 </div>
                 <div class="row">
-                  <div class="col-12 col-sm-4 col-lg-3">
-                      <div class="course-add d-block d-flex flex-column align-items-center justify-content-center">
-                          <a href="#courseAdd" data-toggle="modal">
-                              <span class="btn btn-lg btn-primary btn-course">
-                                  <i class="stroke-wd-3" data-feather="plus"></i>
-                              </span>
-                          </a>
-                          <p class="mge-course-add">새로운 강의를 등록해 주세요.</p>
-                      </div>
-                  </div>
+                    <div class="col-12 col-sm-4 col-lg-3 mg-b-20 mg-sm-b-0">
+                        <a href="#courseWaiting" data-toggle="modal">
+                            <div class="course-card">
+                                <img src="/assets/img/course-1.png" class="d-none d-sm-block" ondragstart="return false">
+                                <div class="card-body">
+                                    <p class="tx-course-1">[대전대학교] 빅데이터 분석</p>
+                                </div>
+                                <div class="card-body d-flex align-items-end">
+                                    <p class="tx-course-2">대전대학교</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <span class="tx-left tx-course-2">20.01.21 ~ 20.02.04</span>
+                                    <span class="badge badge-success">진행</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-3">
+                        <div class="course-add d-flex flex-column align-items-center justify-content-center">
+                            <a href="#courseAdd" data-toggle="modal"></a>
+                                <span class="btn-add btn-primary">
+                                    <i class="stroke-wd-2" data-feather="plus"></i>
+                                </span>
+                            </a>
+                            <p class="tx-add">새로운 강의를 등록해 주세요.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,6 +179,29 @@
             </div>
         </div>    
     </footer>
+
+    <div class="modal fade effect-scale" id="courseWaiting" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">메시지</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pd-20 pd-sm-30 text-center">
+                    <h1 class="tx-30">✍️</h1>
+                    <p class="mge-modal tx-lg-18">코스 등록 <span class="tx-primary">절차가 진행 중입니다.</span></p>
+                    <p class="mge-modal-sub">관리자 수락 완료 후 입장이 가능합니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="wd-100p tx-white d-flex flex-column flex-sm-row">
+                        <a type="button" class="btn btn-primary btn-block mg-sm-l-5 mg-b-5 mg-sm-b-0" data-dismiss="modal">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 
     <div class="modal fade effect-scale" id="courseAdd" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
