@@ -811,6 +811,63 @@ footer {
   }
 }
 
+.case-title-h2 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #1D1D1F;
+  margin-bottom: 0px;
+  padding-bottom: 16px; }
+  @media (min-width: 576px) {
+    .case-title-h2 {
+      font-size: 28px; } }
+  @media (min-width: 768px) {
+    .case-title-h2 {
+      font-size: 36; } }
+  @media (min-width: 992px) {
+    .case-title-h2 {
+      font-size: 36; } }
+  @media (min-width: 1200px) {
+    .case-title-h2 {
+      font-size: 40px; } }
+
+.case-sub-p {
+  font-weight: 500;
+  font-size: 17px;
+  color: #1D1D1F;
+  line-height: 1.58824;
+  margin-bottom: 0px; }
+  @media (min-width: 576px) {
+    .case-sub-p {
+      font-size: 17px; } }
+  @media (min-width: 768px) {
+    .case-sub-p {
+      font-size: 19px; } }
+  @media (min-width: 992px) {
+    .case-sub-p {
+      font-size: 19px; } }
+  @media (min-width: 1200px) {
+    .case-sub-p {
+      font-size: 19px; } }
+
+.case-sub-p2 {
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1D1D1F;
+  line-height: 1.58824;
+  margin-bottom: 10px; }
+  @media (min-width: 576px) {
+    .case-sub-p2 {
+      font-size: 14px !important; } }
+  @media (min-width: 768px) {
+    .case-sub-p2 {
+      font-size: 17px !important; } }
+  @media (min-width: 992px) {
+    .case-sub-p2 {
+      font-size: 17px !important; } }
+  @media (min-width: 1200px) {
+    .case-sub-p2 {
+      font-size: 17px !important; } }
+
 .index-h2 {
   font-weight: 600;
   font-size: 28px;
