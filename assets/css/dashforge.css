@@ -7,6 +7,67 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.case-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(72, 94, 144, 0.1);
+  /*box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
+  border-radius: 18px;*/ }
+
+.case-card p {
+  color: #1D1D1F;
+  outline: none;
+  box-shadow: none;
+}
+
+.case-card a:hover {
+  color: #1D1D1F;
+}
+
+.tx-case {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1D1D1F !important;
+}
+
+.tx-case-1 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tx-case-2 {
+  font-size: 12px !important;
+  font-weight: 500;
+  margin-top: 2px;
+  color: #86868B !important;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tx-case-3 {
+  font-size: 12px !important;
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: #86868B !important;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .mge a:hover{
   text-decoration: underline;
 }
@@ -304,7 +365,7 @@ footer {
 	width:100%;
 	text-align: center;
 	font-weight: 500;
-  color: #8392a5;
+  color: #1D1D1F;
 }
 
 .mge_select input[type=radio] {
@@ -405,7 +466,7 @@ footer {
   background-color: #fff;
   text-align: center;
   /*border-style: dotted;
-  border: dashed 1px rgba(134, 134, 139, 0.2);*/
+  border: 1px solid rgba(72, 94, 144, 0.16);*/
   cursor: pointer;
   /*border-radius: 18px;
   box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);*/
@@ -453,7 +514,7 @@ footer {
   box-shadow: none;
 }
 
-.ccourse-card a:hover {
+.course-card a:hover {
   color: #1D1D1F;
 }
 
@@ -649,14 +710,30 @@ footer {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 0px;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
 .tx-course-2 {
   color: #86868B !important;
   font-weight: 500;
-  font-size: 14px;
-  text-align: center;
+  font-size: 12px;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tx-course-3 {
+  color: #86868B !important;
+  font-weight: 500;
+  font-size: 12px;
   margin-bottom: 0px;
 }
 
@@ -1350,13 +1427,14 @@ opacity: 0.5;
 .btn {
   font-size: 14px !important;
   padding: 8px 16px !important;
-  border-radius: 22px !important;
+  border-radius: 8px !important;
 }
 
 .btn- {
   font-size: 14px !important;
   padding: 8px 16px !important;
   border-radius: 8px !important;
+  background-color: #fff !important;
 }
 
 .btn-mge {
@@ -1744,6 +1822,13 @@ table a {
 .hr-{
   margin-top: 12px;
   margin-bottom: 14px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hr-case{
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -2273,7 +2358,7 @@ img {
 }
 
 .post-body {
-  padding: 20px; }
+  padding: 20px;}
   @media (min-width: 576px) {
     .post-body {
       padding: 40px; } }
@@ -10485,7 +10570,7 @@ strong {
 
 .btn-white {
   background-color: #fff;
-  border-color: #c0ccda;
+  border-color: rgba(72, 94, 144, 0.16);
   color: rgba(27, 46, 75, 0.7); }
   .btn-white:hover, .btn-white:focus {
     border-color: #8392a5;
@@ -12819,7 +12904,8 @@ textarea.form-control {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px 0 25px;
-  border-bottom: 1px solid rgba(72, 94, 144, 0.5); }
+  border-right: 1px solid #e5e9f2;
+  border-bottom: 1px solid #e5e9f2; }
   @media (min-width: 992px) {
     .off-canvas-header {
       height: 60px; } }
@@ -12832,7 +12918,8 @@ textarea.form-control {
 .off-canvas-body {
   position: relative;
   overflow-y: auto;
-  height: calc(100vh - 60px); }
+  height: calc(100vh - 60px);
+  border-right: 1px solid #e5e9f2; }
 
 .off-canvas-dark {
   background-color: #1c273c;
@@ -15249,7 +15336,7 @@ textarea.parsley-success:focus {
     color: #8392a5;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
 
 .navbar-menu-sub {
   position: relative;
@@ -15673,7 +15760,8 @@ textarea.parsley-success:focus {
     transform: translateX(0); }
   .show-aside .aside-header {
     transform: none;
-    border-right-color: transparent; }
+    border-right-color: 1px solid rgba(72, 94, 144, 0.16);
+    /*border-right-color: transparent;*/ }
     .show-aside .aside-header .burger-menu {
       display: none; }
   .show-aside .aside-menu-link svg:first-child {
@@ -15681,10 +15769,12 @@ textarea.parsley-success:focus {
   .show-aside .aside-menu-link svg:last-child {
     display: block; }
   .show-aside .aside-body {
-    border-right-color: transparent; }
+    border-right-color: 1px solid rgba(72, 94, 144, 0.16);
+    /*border-right-color: transparent;*/ }
   .show-aside .aside-backdrop {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    margin-top: 55px; }
 
 .aside {
   width: 240px;
@@ -15805,6 +15895,45 @@ textarea.parsley-success:focus {
       height: 20px;
       stroke-width: 2.5px;
       margin-right: -2px; }
+
+.aside-header- {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 0 18px;
+  border-right: 1px solid rgba(72, 94, 144, 0.16);
+  background-color: #fff;
+  transform: translateX(54px); }
+  @media (min-width: 992px) {
+    .aside-header- {
+      padding: 0 20px;
+      transform: none;
+      height: 59px; } }
+  .aside-header- .burger-menu {
+    color: #8392a5; }
+    .aside-header- .burger-menu:hover, .aside-header- .burger-menu:focus {
+      color: #1b2e4b; }
+    .aside-header- .burger-menu svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.5px;
+      margin-right: -2px; }
+  @media (min-width: 480) {
+    .aside-header- {
+      padding: 0 20px;
+      transform: none;
+      height: 59px; } }
+  .aside-header- .burger-menu {
+    color: #8392a5; }
+    .aside-header- .burger-menu:hover, .aside-header- .burger-menu:focus {
+      color: #1b2e4b; }
+    .aside-header- .burger-menu svg {
+      width: 20px;
+       height: 20px;
+      stroke-width: 2.5px;
+      margin-right: -2px; }    
+      
 
 .aside-logo {
   font-size: 22px;
