@@ -8,6 +8,10 @@
 /* ############### 추가한 코드 Start ############### */
 
 
+.mge-background-1 {
+  background-color: #f5f5f7;
+}
+
 .rf-flagship-sticky {
   text-align: center;
   position: -webkit-sticky;
@@ -1004,12 +1008,13 @@ footer {
   @media (min-width: 1200px) {
     .index-banner-p {
       font-size: 21px;
-      margin: 0px 160px 20px 160px; } }
+      /*margin: 0px 160px 20px 160px;*/ } }
 
 .index-banner-p2 {
   font-weight: 400;
   font-size: 19px;
   color: #1D1D1F;
+  line-height: 1.52632;
   margin-bottom: 20px; }
   @media (min-width: 576px) {
     .index-banner-p {
@@ -1039,8 +1044,8 @@ footer {
 }
 
 .carousel-item {
-  /*height: 32rem;
-  background: #000;*/
+  height: 32rem;
+  background: #000;
   color: #fff;
   position: relative;
 }
@@ -1500,7 +1505,7 @@ opacity: 0.5;
 }
 
 .gradient-fnt {
-  background-image: linear-gradient(to right, #0667FA 0%, #0acffe 100%);
+  background-image: linear-gradient(135deg, #54bbf5, #0079E4);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -1516,6 +1521,11 @@ opacity: 0.5;
   padding: 8px 16px !important;
   border-radius: 8px !important;
   background-color: #fff !important;
+}
+
+.btn-case {
+  font-size: 14px !important;
+  padding: 0px 10px 20px 10px !important;
 }
 
 .btn-mge {
@@ -1710,6 +1720,15 @@ opacity: 0.5;
 }
 
 a[aria-expanded='false'] > .rotate-icon {
+  transform: rotate(0deg);
+}
+
+.rotate-icon- {
+  transform: rotate(45deg);
+  transition: all 0.2s linear;
+}
+
+a[aria-expanded='false'] > .rotate-icon- {
   transform: rotate(0deg);
 }
 
@@ -10661,7 +10680,7 @@ strong {
 
 .btn-like {
   background-color: #fff;
-  border-color: #c0ccda;
+  border-color: rgba(72, 94, 144, 0.16);
   color: rgba(27, 46, 75, 0.7); }
   .btn-like:hover, .btn-like:focus {
     border-color: #8392a5;
