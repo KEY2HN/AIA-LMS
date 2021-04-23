@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column mge-background-1">
     <aside class="aside aside-fixed">
         <div class="aside-header">
             <a href="index.html"><img src="/assets/img/logo_db.png" class="aside-logo" ondragstart="return false"></a>
@@ -41,14 +41,30 @@
                 </div>
             </div><!-- aside-loggedin -->
             <ul class="nav nav-aside">
-                <li class="nav-label">학습 메뉴</li>
                 <li class="nav-item active"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i data-feather="compass"></i><span>커리큘럼</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="book"></i><span>강의 페이지</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지 게시판</span></a></li>
                 <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>과제 게시판</span></a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i data-feather="user-check"></i><span>멘토링 게시판</span></a></li>
-                <li class="nav-item"><a href="" class="nav-link"><i data-feather="users"></i><span>팀 정보</span></a></li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="user-check"></i> <span>동료 과제 평가</span></a>
+                    <ul>
+                        <li><a href="">자기 평가</a></li>
+                        <li><a href="">1차 동료 평가</a></li>
+                        <li><a href="">2차 동료 평가</a></li>
+                        <li><a href="">1차 평가자 리뷰</a></li>
+                        <li><a href="">2차 평가자 리뷰</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="user-check"></i> <span>내 과제 평과 결과</span></a>
+                    <ul>
+                        <li><a href="">1차 동료 평가</a></li>
+                        <li><a href="">2차 동료 평가</a></li>
+                        <li><a href="">1차 평가자 리뷰</a></li>
+                        <li><a href="">2차 평가자 리뷰</a></li>
+                        <li><a href="">멘토 평가</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </aside>
@@ -223,21 +239,21 @@
                                 <div class="card ht-180">
                                     <div class="card-body pd-25">
                                         <div class="d-flex justify-content-between">
-                                            <h6 class="dash-mge">성과<span class="tx-primary">.</span></h6>
+                                            <h6 class="dash-mge">뱃지<span class="tx-primary">.</span></h6>
                                             <a href="" class="tx-12 tx-semibold">전체보기</a>
                                         </div>
-                                        <div class="tx-center d-flex justify-content-between">
+                                        <div class="tx-center d-flex justify-content-between mg-t-2">
                                             <div class="col-xl-4 col-lg-6 col-xs-4">
-                                                <img src="/assets/img/badge-1-01.png" ondragstart="return false">
-                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-5 mg-b-0">최초 로그인</h6>
+                                                <img src="/assets/img/badge-ai-03.png" ondragstart="return false">
+                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-3 mg-b-0">Pytorch</h6>
                                             </div>
                                             <div class="col-xl-4 col-lg-6 col-xs-4">
-                                                <img src="/assets/img/badge-2-01.png" ondragstart="return false">
-                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-5 mg-b-0">출석 50%</h6>
+                                                <img src="/assets/img/badge-iot-01.png" ondragstart="return false">
+                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-3 mg-b-0">Raspberry Pi</h6>
                                             </div>
                                             <div class="col-lg-4 col-xs-4 d-lg-none d-xl-block">
-                                                <img src="/assets/img/badge-3-01.png" ondragstart="return false">
-                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-5 mg-b-0">최초 댓글</h6>
+                                                <img src="/assets/img/badge-prog-03.png" ondragstart="return false">
+                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-3 mg-b-0">Django</h6>
                                             </div>
                                         </div>
                                     </div>

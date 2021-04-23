@@ -7,6 +7,18 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.evalu-p {
+  font-weight: 500;
+  font-size: 17px;
+  color: #1D1D1F;
+  margin-bottom: 15px; }
+
+.evalu-p- {
+  color: #86868B;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
 
 .mge-background-1 {
   background-color: #f5f5f7;
@@ -175,13 +187,14 @@ input[type='radio'].check-custom:checked ~ .check-toggle::after {
 }
 
 .df-title {
-  font-weight : 300;
+  font-weight : 600;
   margin-bottom: 5px;
 }
 
 .df-lead {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
+  color: #86868b;
   margin-bottom: 0px;
 }
 
@@ -805,7 +818,7 @@ footer {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  /*border: 1px solid rgba(72, 94, 144, 0.16);
+  /*border: 1px solid #f5f5f7;
   box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
   border-radius: 18px;*/
   padding: 30px 10px; }
@@ -1930,6 +1943,13 @@ table a {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.hr-evalu{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .hr-case{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2355,16 +2375,15 @@ img {
 
 .file-name {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0px;
   color: #1D1D1F;
 }
 
 .file-size {
   font-size: 12px;
-  font-weight: 600;
   margin-bottom: 0px;
-  color: #8392a5;
+  color: #86868b;
   text-transform: uppercase;
 }
 
@@ -6573,9 +6592,9 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  /*border: 1px solid rgba(72, 94, 144, 0.16);
+  border: 1px solid #f4f5f8;
   box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
-  border-radius: 10px;
+  /*border-radius: 10px;
   border-radius: 18px;*/ }
   .card > hr {
     margin-right: 0;
@@ -37527,7 +37546,7 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   color: #1b2e4b; }
 
 .tx-color-03 {
-  color: #8392a5; }
+  color: #86868b; }
 
 .tx-color-04 {
   color: #c0ccda; }

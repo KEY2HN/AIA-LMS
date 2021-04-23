@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>과제 평가 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_db.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[DX리터러시] 오픈이노베이션</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">DX리터러시</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="book"></i><span>강의 페이지</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지 게시판</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>과제 게시판</span></a></li>
+                <li class="nav-item with-sub show">
+                    <a href="" class="nav-link"><i data-feather="user-check"></i> <span>동료 과제 평가</span></a>
+                    <ul>
+                        <li class="active"><a href="">자기 평가</a></li>
+                        <li><a href="">1차 동료 평가</a></li>
+                        <li><a href="">2차 동료 평가</a></li>
+                        <li><a href="">1차 평가자 리뷰</a></li>
+                        <li><a href="">2차 평가자 리뷰</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="user-check"></i> <span>내 과제 평과 결과</span></a>
+                    <ul>
+                        <li><a href="">1차 동료 평가</a></li>
+                        <li><a href="">2차 동료 평가</a></li>
+                        <li><a href="">1차 평가자 리뷰</a></li>
+                        <li><a href="">2차 평가자 리뷰</a></li>
+                        <li><a href="">멘토 평가</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs d-flex justify-content-between mg-b-20">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">[DX리터러시] 오픈이노베이션</a></li>
+                                <li class="breadcrumb-item"><a href="#">과제 평가</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">자기 평가</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">자기 평가</h2>
+                        <p class="df-lead">나의 과제를 평가합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs">
+                    <div class="col-12">
+                        <div class="card mg-b-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-none d-sm-flex pd-l-20 pd-r-40">
+                                            <i data-feather="grid" class="tx-color-03 wd-20 ht-20"></i>
+                                        </div>
+                                        <div>
+                                            <p class="evalu-p">미터기 텍스트</p>
+                                            <p class="evalu-p-">과제 제출&emsp;<span>2021-04-22 11:56</span></p>
+                                            <p class="evalu-p-">첨부 파일&emsp;<span><u>Medical Certificate.pdf</u></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center btn-group-vertical pd-l-20">
+                                        <a href="" class="btn btn-sm tx-12 btn-primary" onclick="">평가 완료</a>
+                                        <a href="" class="btn btn-sm tx-12 btn-white" onclick="" style="margin-top: 8px !important;">평가 수정</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-b-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-none d-sm-flex pd-l-20 pd-r-40">
+                                            <i data-feather="grid" class="tx-color-03 wd-20 ht-20"></i>
+                                        </div>
+                                        <div>
+                                            <p class="evalu-p">문자 분석</p>
+                                            <p class="evalu-p-">과제 제출&emsp;<span>2021-04-22 11:56</span></p>
+                                            <p class="evalu-p-">첨부 파일&emsp;<span><u>Medical Certificate.pdf</u></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="" class="btn btn-sm tx-12 btn-outline-primary" onclick="">평가하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-b-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-none d-sm-flex pd-l-20 pd-r-40">
+                                            <i data-feather="grid" class="tx-color-03 wd-20 ht-20"></i>
+                                        </div>
+                                        <div>
+                                            <p class="evalu-p">알고리즘</p>
+                                            <p class="evalu-p-">과제 제출&emsp;<span>2021-04-22 11:56</span></p>
+                                            <p class="evalu-p-">첨부 파일&emsp;<span><u>Medical Certificate.pdf</u></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="" class="btn btn-sm tx-12 btn-outline-primary" onclick="">평가하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-b-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-none d-sm-flex pd-l-20 pd-r-40">
+                                            <i data-feather="grid" class="tx-color-03 wd-20 ht-20"></i>
+                                        </div>
+                                        <div>
+                                            <p class="evalu-p">모델개발</p>
+                                            <p class="evalu-p-">과제 제출&emsp;<span>2021-04-22 11:56</span></p>
+                                            <p class="evalu-p-">첨부 파일&emsp;<span><u>Medical Certificate.pdf</u></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="" class="btn btn-sm tx-12 btn-outline-primary" onclick="">평가하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-two.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <script src="/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+    <script src="/assets/js/calendar-events.js"></script>
+    <script src="/assets/js/dashforge.calendar.js"></script>
+
+</body>
+</html>
