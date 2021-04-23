@@ -7,6 +7,16 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.card-borderless {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
 .evalu-p {
   font-weight: 500;
   font-size: 17px;
