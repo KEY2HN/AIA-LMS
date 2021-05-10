@@ -7,6 +7,186 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.custom-box::before,
+.custom-box::after{
+
+}
+
+.custom-box {
+  max-width: 700px;
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.custom-box .hide {
+  display: none;
+}
+
+.home-box h3 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.home-box p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.home-box p span{
+  font-weight: 500;
+}
+
+.home-box .quiz-btn {
+  margin-top: 20px;
+}
+
+.quiz-btn{
+  padding: 15px 45px;
+    background: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-box .question-nuber,
+.quiz-box .question-text,
+.quiz-box .question-container,
+.quiz-box .next-question-btn,
+.quiz-box .answer-indicator {
+  width: 100%;
+  float: left;
+}
+
+.quiz-box .question-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+  border-bottom: 1px solid #cccccc;
+  line-height: 25px;
+}
+
+.quiz-box .question-text {
+  font-size: 22px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+.quiz-box .option-container {
+
+}
+
+.quiz-box .option-container .option {
+  background-color: #cccccc;
+  padding: 15px;
+  font-size: 16px;
+  line-height:22px;
+  color: #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.quiz-box .answers-indicator {
+  border-top: 1px solid #cccccc;
+}
+
+.quiz-box .answers-indicator div {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: #cccccc;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-top: 15px;
+}
+
+
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+.neu-card {
+  padding: 40px 30px;
+  background: #f5f5f7;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1);
+}
+.neu-card:hover
+{
+  box-shadow: inset -6px -6px 20px rgba(208,208,210,0.1), inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.neu-card .imgBx
+{
+  position: relative;
+  text-align: center;
+}
+.neu-card .imgBx img
+{
+  max-width: 120px;
+}
+.neu-card .contentBx
+{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.neu-card .contentBx h2
+{
+  color: #32a3b1;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+.neu-card .contentBx p
+{
+  color: #32a3b1;
+}
+.neu-card .contentBx a
+{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  color: #32a3b1;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255,255,255,1), 4px 4px 15px rgba(0,0,0,0.1);
+}
+.neu-card .contentBx a:hover
+{
+  box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5), inset 4px 4px 10px rgba(0,0,0,0.1);
+}
+.neu-card a:hover span
+{
+  display: block;
+  transform: scale(0.98);
+}
+.neu-card:hover .imgBx,
+.neu-card:hover .contentBx
+{
+  transform: scale(0.98);
+}
+
+
 .card-borderless {
   position: relative;
   display: flex;
@@ -15,6 +195,8 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px -8px rgb(0 0 0 / 4%);
 }
 
 .evalu-p {
@@ -741,7 +923,6 @@ footer {
 }
 
 .slider-logo {
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -828,9 +1009,9 @@ footer {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  /*border: 1px solid #f5f5f7;
-  box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
-  border-radius: 18px;*/
+  /*border: 1px solid #f5f5f7;*/
+  box-shadow: 0 6px 16px -8px rgb(0 0 0 / 4%);
+  border-radius: 8px;
   padding: 30px 10px; }
   @media (min-height: 576px) {
     .slider-card {
