@@ -1772,6 +1772,12 @@ opacity: 0.5;
   -webkit-background-clip: text;
 }
 
+.btn-mail {
+  font-size: 12px !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+}
+
 .btn {
   font-size: 14px !important;
   padding: 8px 16px !important;
@@ -10939,7 +10945,7 @@ strong {
 .btn-white {
   background-color: #fff;
   border-color: rgba(72, 94, 144, 0.16);
-  color: rgba(27, 46, 75, 0.7); }
+  color: #8392a5; }
   .btn-white:hover, .btn-white:focus {
     border-color: #8392a5;
     color: #1b2e4b; }
