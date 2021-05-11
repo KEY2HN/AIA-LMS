@@ -7,6 +7,24 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+
 .custom-box::before,
 .custom-box::after{
 
@@ -115,7 +133,7 @@
 }
 
 
-.container
+/*.container
 {
   position: relative;
   display: flex;
@@ -123,7 +141,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 1100px;
-}
+}*/
 .neu-card {
   padding: 40px 30px;
   background: #f5f5f7;
@@ -186,6 +204,18 @@
   transform: scale(0.98);
 }
 
+.card-mail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f5f7f9;
+  background-clip: border-box;
+  border: 1px solid rgba(72, 94, 144, 0.1);
+  border-radius: 8px;
+  /*box-shadow: 0 6px 16px -8px rgb(0 0 0 / 4%);*/
+}
 
 .card-borderless {
   position: relative;
@@ -1695,18 +1725,42 @@ opacity: 0.5;
   color: #8392a5;
 }
 
-.mge-error {
+/*.mge-error {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 6px;
-}
+}*/
 
-.mge-error-sub {
+.mge-error {
+  font-weight: 600;
+  font-size: 28px;
+  color: #1D1D1F;
+  margin-bottom: 0px;
+  padding-bottom: 16px; }
+
+/*.mge-error-sub {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #8392a5;
-}
+  color: #8392a5;}*/
+
+.mge-error-sub {
+  font-weight: 500;
+  font-size: 19px;
+  color: #1D1D1F;
+  margin-bottom: 20px; }
+  @media (min-width: 576px) {
+    .mge-error-sub {
+      font-size: 19px; } }
+  @media (min-width: 768px) {
+    .mge-error-sub {
+      font-size: 21px; } }
+  @media (min-width: 992px) {
+    .mge-error-sub {
+      font-size: 21px; } }
+  @media (min-width: 1200px) {
+    .mge-error-sub {
+      font-size: 21px; } }
 
 .fnt-700 {
   font-weight: 700 !important;
