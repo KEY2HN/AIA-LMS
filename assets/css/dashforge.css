@@ -7,6 +7,26 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.reply-card {
+  padding: 15px 20px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.reply_inbox {
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 22px;
+  -webkit-appearance: none;
+  resize: none;
+  box-sizing: border-box;
+  background: transparent;
+  color: var(--skinTextColor);
+  outline: 0;
+}
+
 .Aligner {
   display: flex;
   align-items: center;
@@ -915,7 +935,6 @@ footer {
   background-attachment: fixed;
   border-radius: 8px !important;"
 }
-
 @media (min-width: 576px) {
   .index-img {
     height: 200px; } }
@@ -2781,11 +2800,21 @@ img {
 
 .reply-time {
   font-size: 12px;
-  font-weight: 600;
-  margin-top: 2px;
+  font-weight: 500;
+  margin-top: 5px;
   margin-bottom: 0px;
-  color: #8392a5;
+  color: #86868B;
   text-transform: uppercase;
+}
+
+.reply-time a {
+  font-weight: 500;
+  color: #86868B;
+}
+
+.reply-time a:hover {
+  font-weight: 500;
+  color: #86868B;
 }
 
 .reply .form-control {
@@ -2795,10 +2824,11 @@ img {
   overflow-wrap: break-word !important;
   min-height: 18px !important;
   padding: 4px 0px 0px 0px !important;
+  outline: 0;
 }
 
 .reply textarea:focus {
-  outline: none !important;
+  outline: 0 !important;
 }
 
 .reply-pd {
