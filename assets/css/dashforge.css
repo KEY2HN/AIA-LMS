@@ -7,6 +7,21 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+pre {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  color: #1d1d1f !important;
+  white-space : pre-wrap;
+  font-weight : 400;
+  line-height : 1.35296;
+  letter-spacing : -0.04em;
+  margin-bottom : 5px !important;
+}
+
+.reply-img {
+  max-width: 35px;
+  height: 35px;
+}
+
 .reply-card {
   padding: 15px 20px;
   background: #f5f5f7;
