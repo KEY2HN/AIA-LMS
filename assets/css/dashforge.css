@@ -1066,7 +1066,7 @@ footer {
   margin-bottom: 0px;
   display: inline-block;
   width: 100%;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -3845,7 +3845,7 @@ samp {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto; }
+  overflow: auto; } 
 
 figure {
   margin: 0 0 1rem; }
