@@ -7,6 +7,15 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.tx-blue {
+  color: #0079E4;
+}
+
+.media-body a {
+  font-weight: 500;
+  color: #1D1D1F !important;
+}
+
 pre {
   font-family: 'Noto Sans KR', sans-serif !important;
   color: #1d1d1f !important;
@@ -2661,6 +2670,12 @@ img {
 .badge-deadline {
   color: #fff;
   background-color: #868686;
+}
+
+.badge-deadline- {
+  color: #fff;
+  background-color: #868686;
+  opacity: 0.6;
 }
 
 .course-info {
@@ -17514,6 +17529,10 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
 
 .bd-success-light {
   border-color: rgba(16, 183, 89, 0.3); }
+
+.bd-gray {
+  border-color: #86868b;
+  opacity: 0.6 !important; }
 
 .bd-gray-100 {
   border-color: #f4f5f8; }
