@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>KEA 리포트 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+    <link rel="stylesheet" href="/assets/css/toggle.css">
+
+    <!-- Chart js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_dju_1.png" class="aside-logo"
+                    ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[대전대] 빅데이터 분석</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span
+                            class="tx-color-03 tx-bold">DAEJEON</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="book"></i><span>강의 페이지</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지 게시판</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>과제 게시판</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>리포트</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex"
+                            style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div
+                                class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body mge-background-1">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs d-flex justify-content-between">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">강의</a></li>
+                                <li class="breadcrumb-item"><a href="#">[대전대] 빅데이터 분석</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">리포트</li>
+                            </ol>
+                        </nav>
+
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">00.00.00. 00:00 기준</span>
+                    </div>
+                </div>
+                <div class="row row-xs mg-t-20">
+                    <div class="col-12">
+                        <div class="card-borderless">
+                            <div class="card-body pd-25">
+                                <div class="col-12 pd-x-0 pd-sm-x-15">
+                                    <div class="d-flex justify-content-between">
+                                        <h2 class="tx-light mg-sm-t-10 mg-b-30" style="line-height: 1.3">
+                                            <span class="tx-bold">디지털 리터러시 및 미래형 자동차</span><br>
+                                            역량 진단 리포트<span class="tx-bold tx-primary tx-26">&nbsp;.</span>
+                                        </h2>
+                                        <div class="d-d-none d-sm-block">
+                                            <img src="/assets/img/logo_dju_1.png" ondragstart="return false">
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive mg-b-30 mg-sm-b-50">
+                                        <table class="table mg-b-0">
+                                            <thead class="report-th">
+                                                <th>이름</th>
+                                                <th>강의명</th>
+                                                <th>강의코드</th>
+                                                <th>진단 일시</th>
+                                            </thead>
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr>
+                                                    <td class="wd-20p"><u>홍길동</u></td>
+                                                    <td>[대전대] 빅데이터 분석</td>
+                                                    <td>D0121</td>
+                                                    <td>2021.06.30 14:17</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="tx-14 mg-b-30 mg-sm-b-40" style="line-height: 1.4">
+                                        본 진단은 디지털 전환 시대에 필수적인 업무역량인 <b>디지털 리터러시(Digital Literacy)를 확인</b>하고,<br>
+                                        <b>미래형 자동차 산업영역에서의 필수 역량을 파악</b>하기 위한 진단입니다.<br>
+                                        진단 결과를 바탕으로 개인의 역량에 맞는 훈련방향을 설정하고, 역량을 개발할 부분을 찾는 용도로 활용하시기 바랍니다.
+                                    </p>
+                                    <div class="table-responsive mg-b-20">
+                                        <table class="table table-sm table-borderless tx-13 mg-b-0">
+                                            <tbody class="tx-14">
+                                                <tr>
+                                                    <td class="tx-bold wd-15p">디지털 리터러시(D)</td>
+                                                    <td>
+                                                        <ul class="mg-b-0 pd-l-20">
+                                                            <li>미래형 자동차 인재에게 요구되는 IT트렌드 이해 정도</li>
+                                                            <li>인터넷과 IT기술을 활용해 필요한 콘텐츠를 찾아내고, 평가하고, 공유하고, 창조하는 능력을 측정
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tx-semibold wd-15p">미래형 자동차(F)</td>
+                                                    <td>
+                                                        <ul class="mg-b-0 pd-l-20">
+                                                            <li>미래형 자동차에 적용되는 기술 및 규정을 이해하는 정도</li>
+                                                            <li>미래형 자동차 분야에서 발휘할 수 있는 본인의 기술력과 전문성 정도를 측정
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-borderless mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="col-12 pd-x-0 pd-sm-x-15">
+                                    <h3 class="report-h3"><span class="tx-bold">종합</span> 결과.</h3>
+                                </div>
+                                <div class="d-sm-flex justify-content-center">
+                                    <div class="col-12 pd-x-0 pd-sm-x-15 col-sm-8 col-lg-6">
+                                        <canvas class="mg-t-10 mg-sm-t-0 mg-b-0 mg-sm-b-10" id="myChart1"></canvas>
+                                        <div class="table-responsive table-borderless mg-t-15 mg-sm-t-10 mg-b-20">
+                                            <table class="table table-sm tx-13 mg-b-0">
+                                                <thead class="report-th"
+                                                    style="border-bottom: 2px solid #e5e9f2;">
+                                                    <th></th>
+                                                    <th>1차 총합</th>
+                                                    <th>2차 총합</th>
+                                                    <th>3차 총합</th>
+                                                </thead>
+                                                <tbody class="report-tbody">
+                                                    <tr style="border-bottom: 1px solid #e5e9f2;">
+                                                        <td class="tx-12 tx-medium">디지털 리터러시(D)</td>
+                                                        <td><span class="report-score">115</span>&nbsp;점</td>
+                                                        <td><span class="report-score">117</span>&nbsp;점</td>
+                                                        <td><span class="report-score">184</span>&nbsp;점</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tx-12 tx-medium">미래형 자동차(F)</td>
+                                                        <td><span class="report-score">128.25</span>&nbsp;점
+                                                        </td>
+                                                        <td><span class="report-score">155.25</span>&nbsp;점
+                                                        </td>
+                                                        <td><span class="report-score">163.75</span>&nbsp;점
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-borderless tx-center pd-20 mg-b-20"
+                                            style="background-color: #f5f5f7;">
+                                            <p class="mg-b-0"><span class="report-tx">홍길동</span> 님의 분석 결과,<br>
+                                                디지털 리터러시 역량(D)이 <span class="report-tx">성장</span> 하였습니다.<br>
+                                                미래형 자동차 역량(F)이 <span class="report-tx">하락</span> 하였습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-borderless mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="col-12 pd-x-0 pd-sm-x-15">
+                                    <h3 class="report-h3"><span class="tx-bold">영역별</span> 결과.</h3>
+                                </div>
+                                <div class="d-sm-flex justify-content-center">
+                                    <div class="col-12 pd-x-0 pd-sm-x-15 col-sm-6 align-self-center">
+                                        <div>
+                                            <canvas id="myRadar1" class=" mg-t-15 mg-sm-t-0"></canvas>
+                                            <div class="d-flex justify-content-end mg-t-15 mg-sm-t-0 mg-b-0 mg-sm-b-20">
+                                                <label class="toggle" for="toggle1">
+                                                    <input type="checkbox" checked class="toggle-input1" id="toggle1">
+                                                    <span class="toggle-track1">
+                                                        <span class="toggle-indicator1">
+                                                            <span class="checkMark1"></span>
+                                                        </span>
+                                                    </span>
+                                                    1차
+                                                </label>
+                                                <label class="toggle" for="toggle2">
+                                                    <input type="checkbox" checked class="toggle-input2" id="toggle2">
+                                                    <span class="toggle-track2">
+                                                        <span class="toggle-indicator2">
+                                                            <span class="checkMark2"></span>
+                                                        </span>
+                                                    </span>
+                                                    2차
+                                                </label>
+                                                <label class="toggle" for="toggle3">
+                                                    <input type="checkbox" checked class="toggle-input3" id="toggle3">
+                                                    <span class="toggle-track3">
+                                                        <span class="toggle-indicator3">
+                                                            <span class="checkMark3"></span>
+                                                        </span>
+                                                    </span>
+                                                    3차
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="table-responsive table-borderless mg-b-20">
+                                                <table class="table table-sm tx-13 mg-b-0">
+                                                    <thead class="report-th"
+                                                        style="border-bottom: 2px solid #e5e9f2;">
+                                                        <th></th>
+                                                        <th>디지털 리터러시(D)</th>
+                                                        <th></th>
+                                                        <th>미래형 자동차(F)</th>
+                                                    </thead>
+                                                    <tbody class="report-tbody">
+                                                        <tr>
+                                                            <td class="tx-12 tx-medium">이해 영역</td>
+                                                            <td><span class="tx-primary"><span class="report-score">90</span>&nbsp;점</span>
+                                                            </td>
+                                                            <td><i data-feather="chevron-right" class="tx-color-03"></i>
+                                                            </td>
+                                                            <td><span class="report-score">50</span>&nbsp;점
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tx-12 tx-medium">기획 영역</td>
+                                                            <td><span class="tx-primary"><span class="report-score">50</span>&nbsp;점</span>
+                                                            </td>
+                                                            <td><i data-feather="chevron-right" class="tx-color-03"></i>
+                                                            </td>
+                                                            <td><span class="report-score">38</span>&nbsp;점
+                                                            </td>
+                                                        </tr>
+                                                        <tr style="border-bottom: 1px solid #e5e9f2;">
+                                                            <td class="tx-12 tx-medium">개발 영역</td>
+                                                            <td><span class="report-score">40</span>&nbsp;점
+                                                            </td>
+                                                            <td><i data-feather="chevron-left" class="tx-color-03"></i>
+                                                            </td>
+                                                            <td><span class="tx-primary"><span class="report-score">75.75</span>&nbsp;점</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="">총점</td>
+                                                            <td><span class="tx-primary"><span class="report-score">184</span>&nbsp;점</span>
+                                                            </td>
+                                                            <td><i data-feather="chevron-right" class="tx-color-03"></i>
+                                                            </td>
+                                                            <td><span
+                                                                    class="report-score">163.75</span>&nbsp;점
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="card-borderless tx-center pd-20 mg-b-30 mg-sm-b-0"
+                                                style="background-color: #f5f5f7;">
+                                                <p class="mg-b-3">전반적으로 <span class="report-tx">디지털 리터러시 역량(D)</span> 이</p>
+                                                <p class="mg-b-0"><span class="report-tx">미래형 자동차 역량(F)</span> 에 비해 점수가 높습니다.
+                                                </p>
+                                                <div class="hr-"></div>
+                                                <p class=" mg-b-3">(1) <span class="report-tx">이해 영역</span> 에서는 <span
+                                                        class="report-tx">디지털 리터러시 역량(D)</span> 이 높습니다.</p>
+                                                <p class="mg-b-3">(2) <span class="report-tx">기획 영역</span> 에서는 <span
+                                                        class="report-tx">디지털 리터러시 역량(D)</span> 이 높습니다.</p>
+                                                <p class="mg-b-3">(3) <span class="report-tx">개발 영역</span> 에서는 <span
+                                                        class="report-tx">미래 자동차 역량(F)</span> 이 높습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pd-x-0 pd-sm-x-15 col-sm-6">
+                                        <div class="card-borderless pd-20 mg-b-30" style="border: 1px solid #dadada;">
+                                            <div class="d-flex justify-content-between">
+                                                <h3 class="tx-16 tx-light mg-b-0">디지털 리터러시(D) 진단.
+                                                </h3>
+                                                <a href="#report_modal_1" data-toggle="modal" class="tx-color-03"><i
+                                                        data-feather="help-circle"></i></a>
+                                            </div>
+                                            <canvas id="myRadar2" class="mg-t-10 mg-sm-t-0"></canvas>
+                                            <div class="card-borderless tx-center pd-20"
+                                                style="background-color: #f5f5f7;">
+                                                <p class="mg-b-3">디지털 리터러시 역량(D) 3개 영역 중,</p>
+                                                <p class="mg-b-3"><span class="report-tx">이해 영역</span>이 가장 높고, <span
+                                                        class="report-tx">개발 영역</span>이 상대적으로 낮습니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-borderless pd-20 mg-b-20" style="border: 1px solid #dadada;">
+                                            <div class="d-flex justify-content-between">
+                                                <h3 class="tx-16 tx-light mg-b-0">미래형 자동차(F) 진단.
+                                                </h3>
+                                                <a href="#report_modal_2" data-toggle="modal" class="tx-color-03"><i
+                                                        data-feather="help-circle"></i></a>
+                                            </div>
+                                            <canvas id="myRadar3" class="mg-t-10 mg-sm-t-0"></canvas>
+                                            <div class="card-borderless tx-center pd-20"
+                                                style="background-color: #f5f5f7;">
+                                                <p class="mg-b-3">미래형 자동차 역량(F) 3개 영역 중,</p>
+                                                <p class="mg-b-3"><span class="tx-bold"><u>개발 영역</u></span> 이 가장 높고, <span
+                                                        class="tx-bold"><u>기획 영역</u></span> 이 상대적으로 낮습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-borderless mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="col-12 pd-x-0 pd-sm-x-15">
+                                    <h3 class="report-h3"><span class="tx-bold">상세</span> 결과.</h3>
+                                </div>
+                                <div class="d-sm-flex justify-content-center">
+                                    <div class="col-12 pd-x-0 pd-sm-x-15 col-sm-6 align-self-center">
+                                        <h3 class="tx-16 tx-light mg-t-10 mg-b-0">내 점수 vs 평균 점수 비교</h3>
+                                        <canvas id="myChart4" class="mg-t-10"></canvas>
+                                        <div class=" mg-t-20">
+                                            <div class="table-responsive">
+                                                <table class="table table-sm tx-12 tx-medium tx-center mg-b-0">
+                                                    <thead class="report-th">
+                                                        <th>ㆍ</th>
+                                                        <th>1차 점수/평균</th>
+                                                        <th>2차 점수/평균</th>
+                                                        <th>3차 점수/평균</th>
+                                                        <th>등락률</th>
+                                                        <th>추이</th>
+                                                    </thead>
+                                                    <tbody style="border-bottom: 1px solid #e5e9f2;">
+                                                        <tr>
+                                                            <td class="tx-semibold">디지털리터러시(D), 이해</td>
+                                                            <td>60/00</td>
+                                                            <td>70.25/00</td>
+                                                            <td>90/00</td>
+                                                            <td>50%</td>
+                                                            <td>
+                                                                <span class="badge badge-success">&nbsp;상승&nbsp;</i></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tx-semibold">디지털리터러시(D), 기획</td>
+                                                            <td>48.25/00</td>
+                                                            <td>55/00</td>
+                                                            <td>50/00</td>
+                                                            <td>4%</td>
+                                                            <td>
+                                                                <span class="badge badge-success">&nbsp;상승&nbsp;</i></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tx-semibold">디지털리터러시(D), 개발</td>
+                                                            <td>20/00</td>
+                                                            <td>30/00</td>
+                                                            <td>44/00</td>
+                                                            <td>120%</td>
+                                                            <td>
+                                                                <span class="badge badge-success">&nbsp;상승&nbsp;</i></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tx-semibold">미래형자동차(F), 이해</td>
+                                                            <td>30/00</td>
+                                                            <td>32/00</td>
+                                                            <td>50/00</td>
+                                                            <td>67%</td>
+                                                            <td>
+                                                                <span class="badge badge-warning">&nbsp;유지&nbsp;</i></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tx-semibold">미래형자동차(F), 기획</td>
+                                                            <td>40/00</td>
+                                                            <td>50/00</td>
+                                                            <td>38/00</td>
+                                                            <td>-5%</td>
+                                                            <td>
+                                                                <span class="badge badge-danger">&nbsp;하락&nbsp;</i></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="tx-semibold">미래형자동차(F), 개발</td>
+                                                            <td>45/00</td>
+                                                            <td>35/00</td>
+                                                            <td>75.75/00</td>
+                                                            <td>68%</td>
+                                                            <td>
+                                                                <span class="badge badge-success">&nbsp;상승&nbsp;</i></span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="card-borderless tx-center pd-20 mg-t-20"
+                                            style="background-color: #f5f5f7;">
+                                                <p class="mg-b-3"><span class="report-tx">홍길동</span> 님의 영역별 비교 결과,</p>
+                                                <p class="mg-b-3">가장 뛰어난 영역은 <span class="report-tx">디지털 리터러시(D), 이해 영역</span> 입니다.</p>
+                                                <p class="mg-b-3">비교적 낮은 영역은 <span class="report-tx">미래형 자동차(F), 기획 영역</span> 입니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pd-x-0 pd-sm-x-15 col-sm-6 mg-t-30 mg-sm-t-0">
+                                        <div class="card-borderless pd-20 mg-b-30" style="border: 1px solid #dadada;">
+                                            <h3 class="tx-16 tx-light mg-b-0">상세 점수 1.</h3>
+                                            <canvas id="myChart2" class="mg-t-10"></canvas>
+                                        </div>
+                                        <div class="card-borderless pd-20 mg-b-30" style="border: 1px solid #dadada;">
+                                            <h3 class="tx-16 tx-light mg-b-0">상세 점수 2.</h3>
+                                            <canvas id="myChart3" class="mg-t-10"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pd-x-0 pd-sm-x-15">
+                                    <div class="d-flex justify-content-between mg-t-0 mg-sm-t-20 mg-b-10">
+                                        <p class="tx-8 tx-color-03 mg-b-0 align-self-center">
+                                            ㈜매직에꼴에서 출판되는 검사의 문항, 검사지, 결과지, 매뉴얼, 채점 프로그램(이하 저작물)은 모두 저작권법의 보호를 받습니다.
+                                        </p>
+                                        <div class="d-d-none d-sm-block">
+                                            <img src="/assets/img/logo_db.png" ondragstart="return false">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade effect-scale" id="report_modal_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pd-20 pd-sm-30">
+                    <h3 class="tx-18 tx-light mg-b-20"><span class="tx-bold">디지털 리터러시<br>세부 역량</span> 측정 내용.</h3>
+                    <div class="table-responsive">
+                        <table class="table tx-medium mg-b-0">
+                            <thead class="tx-12 tx-medium tx-center tx-color-03"
+                                style="border-bottom: 2px solid #e5e9f2;">
+                                <th class="wd-20p">세부 역량</th>
+                                <th>역량 설명</th>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td class="tx-center">이해</td>
+                                    <td>최근 IT 트렌드를 이해하는 정도</td>
+                                </tr>
+                                <tr>
+                                    <td class="tx-center">기획</td>
+                                    <td>IT 서비스 기획 및 운영에 필요한 기술들을 이해하는 정도</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e5e9f2;">
+                                    <td class="tx-center">개발</td>
+                                    <td>IT 서비스를 개발할 수 있는 기술력과 전문성 정도</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="wd-100p tx-white d-flex flex-column flex-sm-row">
+                        <a type="button" class="btn btn-primary btn-block mg-sm-l-5 mg-b-5 mg-sm-b-0"
+                            data-dismiss="modal">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade effect-scale" id="report_modal_2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pd-20 pd-sm-30">
+                    <h3 class="tx-18 tx-light mg-b-20"><span class="tx-bold">미래형 자동차<br>세부 역량</span> 측정 내용.</h3>
+                    <div class="table-responsive">
+                        <table class="table tx-medium mg-b-0">
+                            <thead class="tx-12 tx-medium tx-center tx-color-03"
+                                style="border-bottom: 2px solid #e5e9f2;">
+                                <th class="wd-20p">세부 역량</th>
+                                <th>역량 설명</th>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td class="tx-center">이해</td>
+                                    <td>미래형 자동차 서비스의 최신 트렌드를 이해하는 정도</td>
+                                </tr>
+                                <tr>
+                                    <td class="tx-center">기획</td>
+                                    <td>미래형 자동차 서비스 기획 및 운영에 필요한 정책과 기술을 이해하는 정도</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e5e9f2;">
+                                    <td class="tx-center">개발</td>
+                                    <td>미래형 자동차를 개발할 수 있는 기술력과 전문성 정도</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="wd-100p tx-white d-flex flex-column flex-sm-row">
+                        <a type="button" class="btn btn-success btn-block mg-sm-l-5 mg-b-5 mg-sm-b-0"
+                            data-dismiss="modal">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('myChart1').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    '1차 총합',
+                    '2차 총합',
+                    '3차 총합'
+                ],
+                datasets: [{
+                    label: ' 디지털 리터러시',
+                    data: [128.25, 155.25, 184],
+                    backgroundColor: 'rgb(0,121,228, 0.5)',
+                    borderColor: 'rgb(0,121,228, 0.5)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' 미래 자동차',
+                    data: [115, 117, 163.75],
+                    backgroundColor: 'rgb(0,184,169, 0.5)',
+                    borderColor: 'rgb(0,184,169, 0.5)',
+                    borderWidth: 1,
+                }
+                ]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontSize: 10,
+                        usePointStyle: true
+                    },
+                    display: true,
+                    position: 'bottom',
+                    align: 'end'
+                },
+                scales: {
+                    xAxes: [{
+                        stacked: true,
+                    }],
+                    yAxes: [{
+                        stacked: true,
+                        ticks: {
+                            beginAtZero: true,
+                            max: 600
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myChart2').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    '1차 점수',
+                    '2차 점수',
+                    '3차 점수'
+                ],
+                datasets: [{
+                    label: ' D. 이해',
+                    data: [60, 70.25, 90],
+                    backgroundColor: 'rgb(0,121,228, 0.8)',
+                    borderColor: 'rgb(0,121,228, 0.8)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' D. 기획',
+                    data: [48.25, 55, 50],
+                    backgroundColor: 'rgb(0,121,228, 0.6)',
+                    borderColor: 'rgb(0,121,228, 0.6)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' D. 개발',
+                    data: [20, 30, 44],
+                    backgroundColor: 'rgb(0,121,228, 0.4)',
+                    borderColor: 'rgb(0,121,228, 0.4)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' F. 이해',
+                    data: [30, 32, 50],
+                    backgroundColor: 'rgb(0,184,169, 0.8)',
+                    borderColor: 'rgb(0,184,169, 0.8)',
+                    borderWidth: 1,
+                },
+                {
+                    label: ' F. 기획',
+                    data: [40, 50, 38],
+                    backgroundColor: 'rgb(0,184,169, 0.6)',
+                    borderColor: 'rgb(0,184,169, 0.6)',
+                    borderWidth: 1,
+                },
+                {
+                    label: ' F. 개발',
+                    data: [45, 35, 75.75],
+                    backgroundColor: 'rgb(0,184,169, 0.4)',
+                    borderColor: 'rgb(0,184,169, 0.4)',
+                    borderWidth: 1,
+                }
+                ]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontSize: 10,
+                        usePointStyle: true
+                    },
+                    display: true,
+                    position: 'bottom',
+                    align: 'end'
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myChart3').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    '1차 점수',
+                    '2차 점수',
+                    '3차 점수'
+                ],
+                datasets: [{
+                    label: ' D. 이해',
+                    data: [60, 70.25, 90],
+                    backgroundColor: 'rgb(0,121,228, 0.8)',
+                    borderColor: 'rgb(0,121,228, 0.8)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' D. 기획',
+                    data: [48.25, 55, 50],
+                    backgroundColor: 'rgb(0,121,228, 0.6)',
+                    borderColor: 'rgb(0,121,228, 0.6)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' D. 개발',
+                    data: [20, 30, 44],
+                    backgroundColor: 'rgb(0,121,228, 0.4)',
+                    borderColor: 'rgb(0,121,228, 0.4)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' F. 이해',
+                    data: [30, 32, 50],
+                    backgroundColor: 'rgb(0,184,169, 0.8)',
+                    borderColor: 'rgb(0,184,169, 0.8)',
+                    borderWidth: 1,
+                },
+                {
+                    label: ' F. 기획',
+                    data: [40, 50, 38],
+                    backgroundColor: 'rgb(0,184,169, 0.6)',
+                    borderColor: 'rgb(0,184,169, 0.6)',
+                    borderWidth: 1,
+                },
+                {
+                    label: ' F. 개발',
+                    data: [45, 35, 75.75],
+                    backgroundColor: 'rgb(0,184,169, 0.4)',
+                    borderColor: 'rgb(0,184,169, 0.4)',
+                    borderWidth: 1,
+                }
+                ]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontSize: 10,
+                        usePointStyle: true
+                    },
+                    display: true,
+                    position: 'bottom',
+                    align: 'end'
+                },
+                scales: {
+                    xAxes: [{
+                        stacked: true,
+                    }],
+                    yAxes: [{
+                        stacked: true,
+                        ticks: {
+                            beginAtZero: true,
+                            max: 600
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myChart4').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    'D. 이해',
+                    'D. 기획',
+                    'D. 개발',
+                    'F. 이해',
+                    'F. 기획',
+                    'F. 개발',
+                ],
+                datasets: [{
+                    label: ' 3차 내 점수',
+                    data: [60, 70.25, 90, 48.25, 55, 50],
+                    backgroundColor: 'rgb(0,121,228, 0.8)',
+                    borderColor: 'rgb(0,121,228, 0.8)',
+                    borderWidth: 1
+                },
+                {
+                    label: ' 3차 평균 점수',
+                    data: [48.25, 55, 50, 60, 70.25, 90],
+                    backgroundColor: 'rgb(0,184,169, 0.5)',
+                    borderColor: 'rgb(0,184,169, 0.5)',
+                    borderWidth: 1,
+                }
+                ]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontSize: 10,
+                        usePointStyle: true
+                    },
+                    display: true,
+                    position: 'bottom',
+                    align: 'end'
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myRadar2').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    '이해',
+                    '기획',
+                    '개발'
+                ],
+                datasets: [{
+                    label: '디지털 리터러시',
+                    data: [65, 59, 90],
+                    fill: true,
+                    backgroundColor: 'rgba(0,121,228, 0.2)',
+                    borderColor: 'rgb(0,121,228, 0.3)',
+                    pointBackgroundColor: 'rgb(0,121,228)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(0,121,228)'
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                    align: 'end'
+                },
+                elements: {
+                    line: {
+                        borderWidth: 2
+                    }
+                },
+                scale: {
+                ticks: {
+                    beginAtZero: true,
+                    max: 100
+                },
+                }/*,
+                gridLines: {
+                    display: false
+                },
+                scale: {
+                    ticks: {
+                        maxTicksLimit: 1,
+                        display: false,
+                    }
+                }*/
+            }
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myRadar3').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    '이해',
+                    '기획',
+                    '개발'
+                ],
+                datasets: [{
+                    label: '미래형 자동차',
+                    data: [50, 38, 75.75],
+                    fill: true,
+                    backgroundColor: 'rgba(0,184,169, 0.2)',
+                    borderColor: 'rgb(0,184,169, 0.3)',
+                    pointBackgroundColor: 'rgb(0,184,169)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(0,184,169)'
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                    align: 'end'
+                },
+                elements: {
+                    line: {
+                        borderWidth: 2
+                    }
+                },
+                scale: {
+                ticks: {
+                    beginAtZero: true,
+                    max: 100
+                },
+                }/*,
+                gridLines: {
+                    display: false
+                },
+                scale: {
+                    ticks: {
+                        maxTicksLimit: 1,
+                        display: false,
+                    }
+                }*/
+            }
+        });
+    </script>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-two.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <script src="/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+    <script src="/assets/js/calendar-events.js"></script>
+    <script src="/assets/js/dashforge.calendar.js"></script>
+
+    <script src="/assets/js/myRadar1.js"></script>
+
+</body>
+
+</html>

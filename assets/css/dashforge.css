@@ -7,6 +7,270 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.toggle {
+  color: #86868b;
+  font-size: 10px;
+  font-weight: 500;
+  align-items: center;
+  border-radius: 100px;
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.toggle-input1 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.toggle-input1:not([disabled]):active + .toggle-track1,
+.toggle-input1:not([disabled]):focus + .toggle-track1 {
+  border: 1px solid transparent;
+}
+.toggle-input1:disabled + .toggle-track1 {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.toggle-track1 {
+  background: #e5efe9;
+  border: 1px solid #f5f5f7;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: 18px;
+  margin-right: 4px;
+
+  position: relative;
+  width: 30px;
+}
+
+.toggle-indicator1 {
+  align-items: center;
+  background: #86868b;
+  border-radius: 12px;
+  bottom: 2px;
+  display: flex;
+  height: 12px;
+  justify-content: center;
+  left: 2px;
+  outline: solid 2px transparent;
+  position: absolute;
+  transition: 0.25s;
+  width: 12px;
+}
+
+.checkMark1 {
+  fill: #fff;
+  height: 15px;
+  width: 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.toggle-input1:checked + .toggle-track1 .toggle-indicator1 {
+  background: rgba(255, 128, 139, 255);
+  transform: translateX(12px);
+}
+.toggle-input1:checked + .toggle-track1 .toggle-indicator1 .checkMark1 {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-track1 {
+    border-radius: 0;
+  }
+}
+
+.toggle-input2 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.toggle-input2:not([disabled]):active + .toggle-track2,
+.toggle-input2:not([disabled]):focus + .toggle-track2 {
+  border: 1px solid transparent;
+}
+.toggle-input2:disabled + .toggle-track2 {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.toggle-track2 {
+  background: #e5efe9;
+  border: 1px solid #f5f5f7;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: 18px;
+  margin-right: 4px;
+
+  position: relative;
+  width: 30px;
+}
+
+.toggle-indicator2 {
+  align-items: center;
+  background: #86868b;
+  border-radius: 12px;
+  bottom: 2px;
+  display: flex;
+  height: 12px;
+  justify-content: center;
+  left: 2px;
+  outline: solid 2px transparent;
+  position: absolute;
+  transition: 0.25s;
+  width: 12px;
+}
+
+.checkMark2 {
+  fill: #fff;
+  height: 15px;
+  width: 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.toggle-input2:checked + .toggle-track2 .toggle-indicator2 {
+  background: rgba(0, 184, 169, 255);
+  transform: translateX(12px);
+}
+.toggle-input2:checked + .toggle-track2 .toggle-indicator2 .checkMark2 {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-track2 {
+    border-radius: 0;
+  }
+}
+
+.toggle-input3 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.toggle-input3:not([disabled]):active + .toggle-track3,
+.toggle-input3:not([disabled]):focus + .toggle-track3 {
+  border: 1px solid transparent;
+}
+.toggle-input3:disabled + .toggle-track3 {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.toggle-track3 {
+  background: #e5efe9;
+  border: 1px solid #f5f5f7;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  height: 18px;
+  margin-right: 4px;
+
+  position: relative;
+  width: 30px;
+}
+
+.toggle-indicator3 {
+  align-items: center;
+  background: #86868b;
+  border-radius: 12px;
+  bottom: 2px;
+  display: flex;
+  height: 12px;
+  justify-content: center;
+  left: 2px;
+  outline: solid 2px transparent;
+  position: absolute;
+  transition: 0.25s;
+  width: 12px;
+}
+
+.checkMark3 {
+  fill: #fff;
+  height: 15px;
+  width: 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.toggle-input3:checked + .toggle-track3 .toggle-indicator3 {
+  background: rgba(0, 121, 228, 255);
+  transform: translateX(12px);
+}
+.toggle-input3:checked + .toggle-track3 .toggle-indicator3 .checkMark3 {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .toggle-track3 {
+    border-radius: 0;
+  }
+}
+
+.report-tx {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.report-pd {
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
+  @media (min-width: 576px) {
+    .report-pd {
+      padding-left: 0px;
+      padding-right: 0px; } }
+
+.report-th {
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  color: #86868b;
+}
+
+.report-tbody{
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.report-h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.report-score {
+  font-weight: 700;
+  font-size: 16px; }
+  @media (min-width: 576px) {
+    .report-score {
+        font-size: 24px; } }
+
+.report-score1 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0079E4; }
+  @media (min-width: 576px) {
+    .report-score1 {
+        font-size: 24px; } }
+
 .tx-blue {
   color: #0079E4;
 }
@@ -17,7 +281,7 @@
 }
 
 pre {
-  font-family: 'Noto Sans KR', sans-serif !important;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
   color: #1d1d1f !important;
   white-space : pre-wrap;
   font-weight : 400;
@@ -2728,7 +2992,7 @@ img {
 .ql-toolbar.ql-snow {
     border: 1px solid #c0ccda !important;
     box-sizing: border-box;
-    font-family: helvetica neue,helvetica,arial,sans-serif;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     padding: 8px;
 }
 
@@ -3734,8 +3998,11 @@ img {
 *::after {
   box-sizing: border-box; }
 
+@import url('https://rsms.me/inter/inter.css');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   line-height: 1.35296;
   font-weight: 400;
   word-break: keep-all;
@@ -3747,7 +4014,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
