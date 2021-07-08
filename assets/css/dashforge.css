@@ -540,7 +540,7 @@ pre {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: 0 6px 16px -8px rgb(0 0 0 / 4%);
 }
 
@@ -1401,7 +1401,7 @@ footer {
   background-clip: border-box;
   /*border: 1px solid #f5f5f7;*/
   box-shadow: 0 6px 16px -8px rgb(0 0 0 / 4%);
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 30px 10px; }
   @media (min-height: 576px) {
     .slider-card {
@@ -1494,8 +1494,92 @@ footer {
     .case-sub-p2 {
       font-size: 17px !important; } }
 
+.about-h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1D1D1F;
+  margin-bottom: 0px;
+  padding-bottom: 15px; }
+  @media (min-width: 576px) {
+    .about-h2 {
+      font-size: 28px;
+      padding-bottom: 16px; } }
+  @media (min-width: 768px) {
+    .about-h2 {
+      font-size: 36;
+      padding-bottom: 16px; } }
+  @media (min-width: 992px) {
+    .about-h2 {
+      font-size: 36;
+      padding-bottom: 16px; } }
+  @media (min-width: 1200px) {
+    .about-h2 {
+      font-size: 40px;
+      padding-bottom: 20px; } }
+
+.about-h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0779E4;
+  margin-bottom: 0px;
+  padding-bottom: 15px; }
+  @media (min-width: 576px) {
+    .about-h3 {
+      font-size: 20px;
+      padding-bottom: 16px; } }
+  @media (min-width: 768px) {
+    .about-h3 {
+      font-size: 26;
+      padding-bottom: 16px; } }
+  @media (min-width: 992px) {
+    .about-h3 {
+      font-size: 30;
+      padding-bottom: 16px; } }
+  @media (min-width: 1200px) {
+    .about-h3 {
+      font-size: 30px;
+      padding-bottom: 20px; } }
+
+.about-p2 {
+  font-weight: 700;
+  font-size: 17px;
+  color: #0779E4;
+  line-height: 1.52632;
+  margin-bottom: 5px; }
+  @media (min-width: 576px) {
+    .about-p2 {
+      font-size: 17px; } }
+  @media (min-width: 768px) {
+    .about-p2 {
+      font-size: 19px; } }
+  @media (min-width: 992px) {
+    .about-p2 {
+      font-size: 19px; } }
+  @media (min-width: 1200px) {
+    .about-p2 {
+      font-size: 19px; } }
+
+.about-p3 {
+  font-weight: 500;
+  font-size: 17px;
+  color:  #1D1D1F;
+  line-height: 1.4211026316;
+  margin-bottom: 5px; }
+  @media (min-width: 576px) {
+    .about-p3 {
+      font-size: 17px; } }
+  @media (min-width: 768px) {
+    .about-p3 {
+      font-size: 17px; } }
+  @media (min-width: 992px) {
+    .about-p3 {
+      font-size: 19px; } }
+  @media (min-width: 1200px) {
+    .about-p3 {
+      font-size: 19px; } }
+
 .index-h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
   color: #f5f5f7;
   margin-bottom: 0px;
@@ -1577,7 +1661,7 @@ footer {
       font-size: 45px; } }
 
 .index-banner-h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
   color: #1D1D1F;
   margin-bottom: 0px;
@@ -1664,7 +1748,7 @@ footer {
       /*margin: 0px 160px 20px 160px;*/ } }
 
 .index-banner-p2 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 19px;
   color: #1D1D1F;
   line-height: 1.52632;
@@ -2642,6 +2726,14 @@ table a {
   margin-bottom: 14px;
   border: 0;
   border-color: #272731 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hr-rep{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-color: #1D1D1F !important;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -5835,23 +5927,23 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #8392a5;
-  border-color: #8392a5; }
+  background-color: #86868B;
+  border-color: #86868B; }
   .btn-dark:hover {
     color: #fff;
-    background-color: #74787e;
-    border-color: #74787e; }
+    background-color: #656568;
+    border-color: #656568; }
   .btn-dark:focus, .btn-dark.focus {
     box-shadow: 0 0 0 0.2rem rgba(88, 99, 122, 0.5); }
   .btn-dark.disabled, .btn-dark:disabled {
     color: #fff;
-    background-color: #8392a5;
-    border-color: #8392a5; }
+    background-color: #86868B;
+    border-color: #86868B; }
   .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;
-    background-color: #74787e;
-    border-color: #74787e; }
+    background-color: #656568;
+    border-color: #656568; }
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
     .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(88, 99, 122, 0.5); }
