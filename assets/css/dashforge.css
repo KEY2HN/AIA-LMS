@@ -7,6 +7,16 @@
 
 /* ############### 추가한 코드 Start ############### */
 
+.custom-item-request {
+  background: linear-gradient(270deg, #eaff7a, #83f3ff, #f0aeff);
+  background-size: 600% 600%;
+  animation: AnimationName 5s ease infinite;
+}
+
+.grid-card {
+  height: 100%;
+}
+
 .grid-item-performance {
   background : linear-gradient(150deg, #5d8dee 20%, #ad5fe6 90%);
 }
@@ -535,6 +545,61 @@ pre {
   border-radius: 8px;
   /*box-shadow: 0 6px 16px -8px rgb(0 0 0 / 4%);*/
 }
+
+.page {
+
+  width: 297mm;
+  min-height: 210mm;
+  padding: 10mm;
+  margin: 0 auto;
+  border: 1px solid rgba(134, 134, 139, 0.3);
+  }
+
+.certiti-bottom {
+  vertical-align: text-bottom;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+      
+@media print {
+  html, body {
+    width: 297mm;  
+    height: 210mm;
+  }
+      
+  .page {
+    margin: 0;
+    border: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+    }
+}
+
+.card-certifi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 190mm;
+  word-wrap: break-word;
+  border: 3px solid rgba(134, 134, 139, 0.5);
+  background-clip: border-box;
+  border-radius: 0.3rem;
+}
+
+.card-certifi-1 {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgba(134, 134, 139, 0.5);
+  border-radius: 0.3rem;
+}
+
 
 .card-borderless {
   position: relative;
@@ -1547,7 +1612,7 @@ footer {
 .about-p2 {
   font-weight: 700;
   font-size: 17px;
-  color: #0779E4;
+  /*color: #0779E4;*/
   line-height: 1.52632;
   margin-bottom: 5px; }
   @media (min-width: 576px) {
@@ -1555,32 +1620,32 @@ footer {
       font-size: 17px; } }
   @media (min-width: 768px) {
     .about-p2 {
-      font-size: 19px; } }
+      font-size: 17px; } }
   @media (min-width: 992px) {
     .about-p2 {
-      font-size: 19px; } }
+      font-size: 17px; } }
   @media (min-width: 1200px) {
     .about-p2 {
-      font-size: 19px; } }
+      font-size: 17px; } }
 
 .about-p3 {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   color:  #1D1D1F;
   line-height: 1.4211026316;
   margin-bottom: 5px; }
   @media (min-width: 576px) {
     .about-p3 {
-      font-size: 17px; } }
+      font-size: 15px; } }
   @media (min-width: 768px) {
     .about-p3 {
-      font-size: 17px; } }
+      font-size: 15px; } }
   @media (min-width: 992px) {
     .about-p3 {
-      font-size: 19px; } }
+      font-size: 17px; } }
   @media (min-width: 1200px) {
     .about-p3 {
-      font-size: 19px; } }
+      font-size: 17px; } }
 
 .index-h2 {
   font-weight: 700;
@@ -2688,6 +2753,20 @@ table a {
   margin-bottom: 0px;
   border: 0;
   border-top: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+.hr-certifi-title{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 2px solid #86868B;
+}
+
+.hr-certifi{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .hr-{
@@ -8663,7 +8742,7 @@ a.close.disabled {
 .carousel-fade .active.carousel-item-right {
   z-index: 0;
   opacity: 0;
-  transition: 0s 0.6s opacity; }
+  transition: 0s 0.3s opacity; }
   @media (prefers-reduced-motion: reduce) {
     .carousel-fade .active.carousel-item-left,
     .carousel-fade .active.carousel-item-right {
