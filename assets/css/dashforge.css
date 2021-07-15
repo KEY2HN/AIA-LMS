@@ -581,15 +581,66 @@ pre {
     }
 }
 
+.serial_num {
+  text-align: left;
+  color: #86868b;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  line-height: 1.75;
+}
+
+.certifi_tit1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+
+.certifi_tit2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.certifi_tx1{
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.certifi_tx2{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.certifi_tx3{
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: #86868b;
+}
+
+.certifi_tx4{
+  font-size: 10px;
+  margin-bottom: 0px;
+  color: #86868b;
+}
+
 .card-certifi {
-  position: relative;
+  text-align: center;
+  /*position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  background-clip: border-box;
+  min-width: 0;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 190mm;
   word-wrap: break-word;
   border: 3px solid rgba(134, 134, 139, 0.5);
-  background-clip: border-box;
   border-radius: 0.3rem;
 }
 
