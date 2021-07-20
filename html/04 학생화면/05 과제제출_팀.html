@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>과제 글쓰기 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+
+    <!-- Quill CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_db.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[매직에꼴] magicecole</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">magicecole</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="book"></i><span>강의 페이지</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지 게시판</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>과제 게시판</span></a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>팀 과제 게시판</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <div class="content-header navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </div><!-- content-header -->
+
+      <div class="content-body">
+          <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+              <div class="col-12 board-pd">
+                  <div class="card">
+                      <div class="post-body">
+                          <a href="db-notice.html" class="tx-13">Smart Editor.</a>
+                          <h3 class="tx-uppercase tx-semibold lh-5 mg-b-20">과제 글쓰기</h3>
+                          <form>
+                              <div class="form-row mg-b-20">
+                                  <div class="col-12">
+                                      <h6 class="tx-13 tx-medium mg-b-4">과제명</h6>
+                                      <input type="text" class="form-control" value="팀 과제 제출" disabled></input>
+                                  </div>
+                              </div>
+                              <div class="form-row mg-b-20">
+                                <div class="col-3">
+                                    <h6 class="tx-13 tx-medium mg-b-4 mg-lg-t-0 mg-md-t-0 mg-t-10">팀명</h6>
+                                    <input type="text" class="form-control" value="1팀" disabled></input>
+                                </div>
+                                <div class="col-9">
+                                    <h6 class="tx-13 tx-medium mg-b-4 mg-lg-t-0 mg-md-t-0 mg-t-10">팀원</h6>
+                                    <input type="text" class="form-control" value="채윤호 이정인 이진주 한기헌" disabled></input>
+                                </div>
+                            </div>
+                            <div class="mg-b-20">
+                                <h6 class="tx-13 tx-medium mg-b-4">프로젝트 제목</h6>
+                                <input type="text" class="form-control np-post" placeholder="프로젝트 제목을 입력하세요"></input>
+                            </div>
+                            <div class="mg-b-20">
+                                <h6 class="tx-13 tx-medium mg-b-8">프로젝트 설명</h6>
+                                <div id="toolbar-container">
+                                    <span class="ql-formats">
+                                        <select class="ql-font"></select>
+                                        <select class="ql-size"></select>
+                                    </span>
+                                    <span class="ql-formats">
+                                        <button class="ql-bold"></button>
+                                        <button class="ql-italic"></button>
+                                        <button class="ql-underline"></button>
+                                        <button class="ql-strike"></button>
+                                        <!-- button 대신 select로 태그를 지정해야 함 -->
+                                        <button class="ql-color"></button>
+                                        <button class="ql-background"></button>
+                                        <!-- button 대신 select로 태그를 지정해야 함 end-->
+                                    </span>
+                                    <span class="ql-formats mg-t-5">
+                                        <button class="ql-list" value="ordered"></button>
+                                        <button class="ql-list" value="bullet"></button>
+                                        <!-- button 대신 select로 태그를 지정해야 함 -->
+                                        <button class="ql-align"></button>
+                                        <!-- button 대신 select로 태그를 지정해야 함 end-->
+                                    </span>
+                                    <span class="ql-formats mg-t-5">
+                                        <button class="ql-link"></button>
+                                        <button class="ql-image"></button>
+                                        <button class="ql-video"></button>
+                                    </span>
+                                </div>
+                                <div id="editor-container" class="np-post- np-radius-tx-edit"></div>
+                            </div>
+                        </form>
+                        <div>
+                            <h6 class="tx-13 tx-medium mg-b-8">파일첨부</h6>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">파일 업로드</label>
+                            </div>
+                          <div class="row row-xs">
+                              <div class="col-sm-6 col-lg-4 col-xl-3 mg-t-10">
+                                  <div class="file file-folder d-flex">
+                                      <i data-feather="file" style="color: #00b8a9;"></i>
+                                      <div class="file-body">
+                                          <h6 class="mg-b-0"><a href="" class="link-02">Medical Certificate.pdf</a></h6>
+                                          <span class="tx-color-03">10.45KB</span>
+                                      </div>
+                                      <div>
+                                          <a href="" type="button" class="tx-color-01"><i data-feather="x" width="14" height="14"></i></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mg-t-20">
+                  <div class="d-flex">
+                      <a href="" class="btn btn-white btn-uppercase">취소</a>
+                      <a href="" class="btn btn-primary btn-uppercase mg-l-10">과제 제출하기</a>
+                  </div>
+              </div>
+          </div>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <script>
+    var quill = new Quill('#editor-container', {
+      modules: {
+        toolbar: '#toolbar-container'
+      },
+      theme: 'snow'
+    });
+    </script>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="/lib/js-cookie/js.cookie.js"></script>
+    <script src="/assets/js/dashforge.settings.js"></script>
+
+
+</body>
+
+</html>

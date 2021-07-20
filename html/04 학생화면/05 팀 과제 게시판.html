@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>팀 과제 게시판 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+
+    <!-- Quill CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_db.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[매직에꼴] magicecole</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">magicecole</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="book"></i><span>강의 페이지</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지 게시판</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>과제 게시판</span></a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="edit-3"></i><span>팀 과제 게시판</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header navbar navbar-header">
+          <div class="navbar-right">
+              <div class="dropdown dropdown-profile">
+                  <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                      <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                          <i data-feather="user" class="wd-16 ht-16"></i>
+                      </div>
+                  </a><!-- dropdown-link -->
+                  <div class="dropdown-menu dropdown-menu-right tx-13">
+                      <div>
+                          <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                              <i data-feather="user" class="wd-32 ht-32"></i>
+                          </div>
+                          <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                          <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                          <div class="dropdown-divider"></div>
+                      </div>
+                      <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                      <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                      <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                  </div><!-- dropdown-menu -->
+              </div><!-- dropdown -->
+          </div><!-- navbar-right -->
+      </div><!-- content-header -->
+
+      <div class="content-body">
+          <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+              <div class="d-sm-flex align-items-center justify-content-end mg-md-b-30 mg-b-20 d-none d-sm-block">
+                  <div class="d-flex">
+                      <a href="" class="btn btn-white btn-uppercase"><i data-feather="chevron-up" class="wd-12 mg-r-5"></i>이전글</a>
+                      <a href="" class="btn btn-white btn-uppercase mg-l-10"><i data-feather="chevron-down" class="wd-12 mg-r-5"></i>다음글</a>
+                      <a href="" class="btn btn-white btn-uppercase mg-l-10">목록</a>
+                  </div>
+              </div>
+              <div class="col-12 board-pd">
+                  <div class="card">
+                      <div class="post-body">
+                        <a href="db-notice.html" class="tx-13">팀 과제 게시판</a>
+                        <h3 class="tx-uppercase tx-semibold lh-5 mg-b-20">[알려줘! 경제] "주식 언제 팔까요?…동학개미가 물어봤습니다</h3>
+                        <div class="media">
+                          <div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                          <div class="media-body pd-l-10">
+                            <h6 class="tx-13 tx-semibold mg-b-2"><span>1팀</span><span>&emsp;채윤호&ensp;이정인&ensp;이진주&ensp;한기헌</span></h6>
+                            <p class="tx-12 tx-color-03 mg-b-0">
+                              <span>2020.05.20.14:41</span>
+                              <span>&emsp;조회 14</span>
+                            </p>
+                          </div>
+                          <div class="dropdown-file">
+                            <a href="#" class="dropdown-link" id="dropdownMenuButton" data-toggle="dropdown"><i style="color: #495057;" data-feather="more-vertical"></i></a>
+                            <div class="dropdown-content dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">수정</a>
+                              <a class="dropdown-item" href="#">삭제</a>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="d-sm-flex align-items-center mg-b-20">
+                          <div class="d-flex">
+                            <a href="" class="btn btn-outline-primary btn-uppercase"><i data-feather="thumbs-up" class="wd-12 mg-r-5"></i><span class="tx-bold">8</span></a>
+                            <a href="" class="btn btn-white btn-uppercase mg-l-10"><i data-feather="message-circle" class="wd-12 mg-r-5"></i><span class="tx-bold">2</span></a>
+                          </div>
+                        </div>
+                        <p class="tx-15 lh-5">
+                          잉글랜드 프리미어리그에서 성공적인 선수 생활을 이어가고 있는 손흥민(28‧토트넘)이 아시아 선수에 대한 편견을 깨고 있다며 높은 평가를 받았다. 영국 축구 매체 풋볼365는 20일(현지시간) "손흥민은 국적 때문에 저평가 받는 선수"라면서 "만약 브라질 출신이라면 이미 슈퍼스타가 됐을 것이다. 잉글랜드 국적을 갖고 있다면 몸값은 1억 파운드(약 1500억원)가 됐을 것"이라고 손흥민에게 찬사를 보냈다.
+                        </p>
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-end mg-t-20">
+                    <div class="d-flex">
+                        <a href="" class="btn btn-white btn-uppercase">목록</a>
+                        <a href="" class="btn btn-white btn-uppercase mg-l-10"><i data-feather="chevron-up" class="wd-12 mg-r-5"></i>맨위로</a>
+                      </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/feather-icons/feather.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../lib/jquery.flot/jquery.flot.js"></script>
+    <script src="../../lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="../../lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="../../lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="../../lib/peity/jquery.peity.min.js"></script>
+    <script src="../../lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="../../assets/js/dashforge.js"></script>
+    <script src="../../assets/js/dashforge.aside.js"></script>
+    <script src="../../assets/js/dashforge.sampledata.js"></script>
+    <script src="../../assets/js/dashboard-four.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="../../lib/js-cookie/js.cookie.js"></script>
+    <script src="../../assets/js/dashforge.settings.js"></script>
+
+
+  </body>
+</html>
