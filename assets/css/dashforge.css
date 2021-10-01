@@ -2042,24 +2042,24 @@ footer {
 
 .index-p {
   font-weight: 400;
-  font-size: 19px;
+  font-size: 19px !important;
   color: #f5f5f7;
   margin-bottom: 0px; }
   @media (min-width: 576px) {
     .index-p {
-      font-size: 19px;
+      font-size: 19px !important;
       margin-right: 50px; } }
   @media (min-width: 768px) {
     .index-p {
-      font-size: 21px;
+      font-size: 21px !important;
       margin-right: 150px; } }
   @media (min-width: 992px) {
     .index-p {
-      font-size: 21px;
+      font-size: 21px !important;
       margin-right: 300px; } }
   @media (min-width: 1200px) {
     .index-p {
-      font-size: 21px;
+      font-size: 21px !important;
       margin-right: 500px; } }
 
 .index-dt {
