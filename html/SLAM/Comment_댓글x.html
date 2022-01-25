@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="내가 찾던 미래 교육. 매직에콜에 오신 것을 환영합니다.">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>Comment : SLAM</title>
+
+    <!-- vendor css -->
+    <link href="/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.auth.css">
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+
+</head>
+
+<body class="d-flex flex-column">
+    <header class="navbar navbar-header navbar-header-fixed">
+        <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+        <div class="navbar-brand">
+            <a href="#"><h2 class="tx-bold mg-b-0">SLAM</h2></a>
+        </div><!-- navbar-brand -->
+        <div id="navbarMenu" class="navbar-menu-wrapper">
+            <div class="navbar-menu-header">
+                <img src="/assets/img/logo_dju_1.png" ondragstart="return false">
+                <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+            </div><!-- navbar-menu-header -->
+            <ul class="nav navbar-menu justify-content-end">
+                <li class="nav-label pd-l-15 pd-lg-l-25 d-lg-none">Main Navigation</li>
+                <li class="nav-item with-sub">
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="monitor"></i> 학습 콘텐츠</a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="message-circle"></i> Comment</a></li>
+            </ul>
+        </div><!-- navbar-menu-wrapper -->
+        <div class="navbar-right">
+            <div class="dropdown dropdown-profile">
+                <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                    <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center tx-center" style="color: #001737;">
+                        <i data-feather="user" class="wd-16 ht-16"></i>
+                    </div>
+                </a><!-- dropdown-link -->
+                <div class="dropdown-menu dropdown-menu-right tx-13">
+                    <a href="" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a> 
+                </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+        </div><!-- navbar-right -->
+    </header><!-- navbar -->
+
+    <div class="content content-fixed">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-xl-8">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-style1 mg-b-20">
+                        <li class="breadcrumb-item"><a href="#">홈</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Comment</li>
+                    </ol>
+                </nav>
+                <h3 class="tx-bold mg-b-2">Comment</h3>
+                <p class="tx-color-03 tx-semibold mg-b-0">SLAM 시스템 오류가 있거나 추가로 원하는 기능이 있으면 내용을 적어서 올려주세요.</p>
+                <hr>
+                <div class="card comment-pd">
+                    <h3 class="tx-semibold mg-b-15">게시글이 안보이는 오류</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="comment-profile">
+                                <i data-feather="user" class="wd-16 ht-16"></i>
+                            </div>
+                            <div class="">
+                                <p class="comment-name"><span>나다라</span></p>
+                                <p class="comment-info"><span>2022.01.13.14:41</span>&emsp;조회&nbsp;<span>36</span></p>
+                            </div>
+                        </div>
+                        <div class="dropdown-file">
+                            <a href="#" class="dropdown-link" id="dropdownMenuButton" data-toggle="dropdown"><i  style="color: #495057;" data-feather="more-vertical"></i></a>
+                            <div class="dropdown-content dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">수정</a>
+                                <a class="dropdown-item" href="#">삭제</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="mg-b-0">
+                        3번 게시글이 안보이는 오류가 납니다.
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-end mg-t-20">
+                    <div>
+                        <a href="" class="btn btn-danger mg-r-3" value="삭제" onclick="confirmAction_1();">삭제</a>
+                        <a href="" class="btn btn-white">목록</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmAction_1() {
+            let confirmAction_1 = confirm("해당 게시글을 삭제하시겠습니까?");
+            if (confirmAction_1) {
+                alert("게시글이 삭제되었습니다.");
+            } else {
+                return;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

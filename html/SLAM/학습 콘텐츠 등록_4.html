@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="내가 찾던 미래 교육. 매직에콜에 오신 것을 환영합니다.">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>학습 콘텐츠 등록 : SLAM</title>
+
+    <!-- vendor css -->
+    <link href="/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.auth.css">
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+
+</head>
+
+<body class="d-flex flex-column">
+    <header class="navbar navbar-header navbar-header-fixed">
+        <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+        <div class="navbar-brand">
+            <a href="#"><h2 class="tx-bold mg-b-0">SLAM</h2></a>
+        </div><!-- navbar-brand -->
+        <div id="navbarMenu" class="navbar-menu-wrapper">
+            <div class="navbar-menu-header">
+                <img src="/assets/img/logo_dju_1.png" ondragstart="return false">
+                <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+            </div><!-- navbar-menu-header -->
+            <ul class="nav navbar-menu justify-content-end">
+                <li class="nav-label pd-l-15 pd-lg-l-25 d-lg-none">Main Navigation</li>
+                <li class="nav-item with-sub">
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="monitor"></i> 학습 콘텐츠</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="message-circle"></i> Comment</a></li>
+            </ul>
+        </div><!-- navbar-menu-wrapper -->
+        <div class="navbar-right">
+            <div class="dropdown dropdown-profile">
+                <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                    <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center tx-center" style="color: #001737;">
+                        <i data-feather="user" class="wd-16 ht-16"></i>
+                    </div>
+                </a><!-- dropdown-link -->
+                <div class="dropdown-menu dropdown-menu-right tx-13">
+                    <a href="" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+        </div><!-- navbar-right -->
+    </header><!-- navbar -->
+
+    <div class="content content-fixed">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-xl-6">
+                <p class="tx-primary tx-semibold mg-b-2">학습 콘텐츠 등록</p>
+                <h3 class="tx-bold mg-b-0">AI 수학</h3>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">주제</h6>
+                    </div>
+                    <div class="col-10">
+                        <select class="custom-select">
+                            <option selected>중주제 선택</option>
+                            <option value="1">NLP</option>
+                            <option value="2">Computer Vision</option>
+                            <option value="3">Machine Learning</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">키워드</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" placeholder="복수의 키워드들은 , 로 구분하여 입력하세요.">
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">작성자</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" placeholder="작성자 입력은 선택사항입니다.">
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">토픽</h6>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" placeholder="토픽을 입력하세요.">
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">개념</h6>
+                    </div>
+                    <div class="col-10">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile1">
+                            <label class="custom-file-label" for="customFile1">파일 업로드</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">예제</h6>
+                    </div>
+                    <div class="col-10">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile2">
+                            <label class="custom-file-label" for="customFile2">파일 업로드</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">Programming code</h6>
+                    </div>
+                    <div class="col-10">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile3">
+                            <label class="custom-file-label" for="customFile3">파일 업로드</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row row-xs">
+                    <div class="col-2 d-flex align-items-center">
+                        <h6 class="tx-13 tx-medium mg-b-0">난이도</h6>
+                    </div>
+                    <div class="col-10 d-flex align-items-center">
+                        <div class="custom-control custom-radio mg-r-30" sytle="padding: 7.5px 0px 7.5px 0px;">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="customRadio1">상</label>
+                        </div>
+                        <div class="custom-control custom-radio mg-r-30">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">중</label>
+                        </div>
+                        <div class="custom-control custom-radio mg-r-30">
+                            <input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">하</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end">
+                    <div>
+                        <a href="" class="btn btn-white mg-r-3">닫기</a>
+                        <a href="" class="btn btn-primary">등록</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
